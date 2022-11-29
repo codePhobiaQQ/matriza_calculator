@@ -4,10 +4,10 @@ const CircleBot = () => {
   return (
     <svg
       width="440"
-      height="501"
-      viewBox="0 0 440 501"
-      className={"CircleBot"}
+      height="715"
+      viewBox="0 0 440 715"
       fill="none"
+      className={"CircleBot"}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
