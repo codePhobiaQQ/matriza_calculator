@@ -16,9 +16,14 @@
   font-weight: normal
   src: local('TT'), url('./../assets/fonts/TTNormsPro-Regular.woff2') format('woff2')
 
+a
+  text-decoration: none
+  color: inherit
+
 body
   background-color: $accent
   font-family: "TT", sans-serif
+  color: $textColor
 
 .container
   width: Min(calc(#{$index} * 84), 1680px)
@@ -26,4 +31,24 @@ body
   margin: auto
 
 .header
-  padding: $px20 0
+  .container
+    padding: $px20 0
+    border-bottom: 1px solid #582734
+    .headerInner
+      display: flex
+      align-items: center
+      .Logo
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+      .BackBtn
+        display: flex
+        align-items: center
+        padding: $px16 $px35
+        font-size: $px20
+        background-color: #C58697
+        border-radius: Min(calc(#{$index} * 2.5), 50px)
+        display: inline-block
+        color: #fff
+        span
+          margin-left: $px20
