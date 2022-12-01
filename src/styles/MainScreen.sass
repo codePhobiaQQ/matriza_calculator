@@ -33,13 +33,7 @@ $leftSide: 60%
           margin-bottom: Min(#{$index} * 3.5, 70px)
 
         button
-          @include centerMix
-          font-size: $px20
-          background: linear-gradient(90deg, #7F613B -0.08%, #876A42 4.23%, #9D8455 11.37%, #A08757 12.17%, #AB9461 15.96%, #C5B278 22.14%, #D7C687 28.5%, #EADB97 33.89%, #E5D593 44.48%, #CFBC7F 56.2%, #B59D66 73.32%, #927546 86.82%, #826337 99.97%)
-          border-radius: Min(#{$index} * 3.5, 70px)
-          padding: $px20 Min(calc(#{$index} * 1.75), 35px)
-          color: #582734
-          cursor: pointer
+          @include btnMix
           svg
             margin-left: $px20
 
@@ -77,7 +71,7 @@ $leftSide: 60%
 
 $verticalSize: calc(100% - Min(#{$index} * 5, 100px))
 $horisontalSize: calc(100% - Min(#{$index} * 5, 100px))
-$formWidth: Min(calc(#{$index} * 17), 340px)
+$formWidth: Min(calc(#{$index} * 20), 400px)
 
 .CalculationModal
   height: 100vh
@@ -149,6 +143,11 @@ $formWidth: Min(calc(#{$index} * 17), 340px)
           max-width: 80%
           height: 80%
           max-height: Min(#{$index} * 15, 300px)
+      input
+        margin-bottom: $px24
+      button
+        @include btnMix
+
 
 
 
