@@ -51,6 +51,8 @@ $leftSide: 60%
           height: 100%
     &.second
       margin-top: auto
+      position: relative
+      z-index: 1
       .tabsWrapper
         display: flex
         align-items: center
@@ -72,4 +74,51 @@ $leftSide: 60%
           margin: 0 Min(#{$index} * 3.5, 70px)
           margin-top: -0.15em
           color: #582734
+
+$verticalSize: calc(100% - Min(#{$index} * 5, 100px))
+$horisontalSize: calc(100% - Min(#{$index} * 5, 100px))
+
+.CalculationModal
+  height: 100vh
+  width: 100vw
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  background: rgba(79, 79, 79, 0.5)
+  backdrop-filter: blur(10px)
+  opacity: 0
+  pointer-events: none
+  @include transitionMix(300ms)
+  &.active
+    opacity: 1
+    pointer-events: inherit
+    .CalculationModalInner
+      transform-origin: center center
+      transform: scale3d(1, 1, 1)
+
+  .CalculationModalInner
+    height: $verticalSize
+    width: $horisontalSize
+    padding: Min(#{$index} * 3, 60px)
+    box-sizing: border-box
+    background-color: #E8E8E8
+    position: absolute
+    top: calc((100% - #{$verticalSize}) / 2)
+    left: calc((100% - #{$horisontalSize}) / 2)
+    @include transitionMix(300ms)
+    transform: scale3d(.9, .9, .9)
+    h2
+      width: 95%
+      font-size: $px27
+      line-height: 1.2em
+      @include titleMix
+    .Close
+      position: absolute
+      z-index: 10
+      right: Min(#{$index} * 3, 60px)
+      top: Min(#{$index} * 3, 60px)
+      cursor: pointer
+
+
 
