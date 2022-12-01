@@ -77,6 +77,7 @@ $leftSide: 60%
 
 $verticalSize: calc(100% - Min(#{$index} * 5, 100px))
 $horisontalSize: calc(100% - Min(#{$index} * 5, 100px))
+$formWidth: Min(calc(#{$index} * 17), 340px)
 
 .CalculationModal
   height: 100vh
@@ -106,8 +107,10 @@ $horisontalSize: calc(100% - Min(#{$index} * 5, 100px))
     position: absolute
     top: calc((100% - #{$verticalSize}) / 2)
     left: calc((100% - #{$horisontalSize}) / 2)
-    @include transitionMix(300ms)
+    transition: all .3s ease-in-out
     transform: scale3d(.9, .9, .9)
+    display: flex
+    flex-flow: column
     h2
       width: 95%
       font-size: $px27
@@ -119,6 +122,33 @@ $horisontalSize: calc(100% - Min(#{$index} * 5, 100px))
       right: Min(#{$index} * 3, 60px)
       top: Min(#{$index} * 3, 60px)
       cursor: pointer
+    p
+      font-size: $px18
+      line-height: 1.4em
+      margin-top: $px27
+      color: #582734
+      font-family: "TTL", sans-serif
+    .formWrapper
+      display: flex
+      align-items: center
+      width: 100%
+      margin-top: $px50
+      flex: 1 1 auto
+      .form
+        width: $formWidth
+        display: flex
+        flex-direction: column
+      .imageWrapper
+        flex: 1 0 0
+        display: flex
+        align-items: center
+        justify-content: center
+        width: calc(100% - #{$formWidth})
+        svg
+          margin: auto
+          max-width: 80%
+          height: 80%
+          max-height: Min(#{$index} * 15, 300px)
 
 
 
