@@ -9,7 +9,7 @@ $leftSide: 60%
   display: flex
   flex-direction: column
   height: calc(100vh - Min(#{$index} * 3.5, 70px))
-  overflow: hidden
+  //overflow: hidden
   &.active
     overflow: visible
   .CircleBot
@@ -109,6 +109,7 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
     transform: scale3d(.9, .9, .9)
     display: flex
     flex-flow: column
+    overflow-y: auto
     h2
       width: 95%
       font-size: $px27
@@ -145,15 +146,15 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
         svg
           margin: auto
           max-width: 80%
-          height: 80%
-          max-height: Min(#{$index} * 15, 300px)
+          height: 70%
+          max-height: Min(#{$index} * 12.5, 250px)
       span
         margin-bottom: $px27
         font-size: $px24
         color: #582734
 
       input
-        margin-bottom: $px24
+        margin-bottom: $px10
       button
         @include btnMix
 

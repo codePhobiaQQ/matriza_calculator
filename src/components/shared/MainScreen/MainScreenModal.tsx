@@ -57,13 +57,22 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
       console.log(name, date, personalValue, maleValue);
       if (name && date && personalValue && maleValue) {
         console.log(name, date, personalValue, maleValue);
+        handleClose();
       }
     }
     // Second Type
     else if (tabs[type].id == 2) {
+      if (name && date && personalValue && maleValue) {
+        console.log(name, date, personalValue, maleValue);
+        handleClose();
+      }
     }
     // Third Type
     else {
+      if (name && date && personalValue && maleValue) {
+        console.log(name, date, personalValue, maleValue);
+        handleClose();
+      }
     }
   };
 

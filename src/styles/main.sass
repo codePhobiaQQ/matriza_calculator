@@ -9,7 +9,6 @@
   font-weight: normal
   src: local('TTL'), url('./../assets/fonts/TTNormsPro-Light.woff2') format('woff2')
 
-
 @font-face
   font-family: 'TT'
   font-style: normal
@@ -21,6 +20,18 @@
   font-style: normal
   font-weight: normal
   src: local('TTT'), url('./../assets/fonts/TTNormsPro-Thin.woff2') format('woff2')
+
+*::-webkit-scrollbar
+  width: 1px
+  height: 1px
+
+*::-webkit-scrollbar-thumb
+  background-color: #582734
+
+*::-webkit-scrollbar-track
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset
+  background-color: #fff
 
 a
   text-decoration: none
@@ -88,7 +99,7 @@ input
   color: #582734
 
 .selectWrapper
-  margin-bottom: $px20
+  margin-bottom: $px10
 
 
 .selectContainer
