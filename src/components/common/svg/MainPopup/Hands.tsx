@@ -55,19 +55,19 @@ const Hands = () => {
           y2="100.361"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_51_503"
@@ -77,19 +77,19 @@ const Hands = () => {
           y2="60.1613"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_51_503"
@@ -99,19 +99,19 @@ const Hands = () => {
           y2="69.7024"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_51_503"
@@ -121,19 +121,19 @@ const Hands = () => {
           y2="80.2936"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_51_503"
@@ -143,19 +143,19 @@ const Hands = () => {
           y2="102.538"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_51_503"
@@ -165,19 +165,19 @@ const Hands = () => {
           y2="69.3886"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_51_503"
@@ -187,19 +187,19 @@ const Hands = () => {
           y2="75.7583"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_51_503"
@@ -209,19 +209,19 @@ const Hands = () => {
           y2="87.4246"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7F613B" />
-          <stop offset="0.0430535" stop-color="#876A42" />
-          <stop offset="0.1144" stop-color="#9D8455" />
-          <stop offset="0.1224" stop-color="#A08757" />
-          <stop offset="0.1603" stop-color="#AB9461" />
-          <stop offset="0.2221" stop-color="#C5B278" />
-          <stop offset="0.2857" stop-color="#D7C687" />
-          <stop offset="0.3395" stop-color="#EADB97" />
-          <stop offset="0.4454" stop-color="#E5D593" />
-          <stop offset="0.5625" stop-color="#CFBC7F" />
-          <stop offset="0.7336" stop-color="#B59D66" />
-          <stop offset="0.8686" stop-color="#927546" />
-          <stop offset="1" stop-color="#826337" />
+          <stop stopColor="#7F613B" />
+          <stop offset="0.0430535" stopColor="#876A42" />
+          <stop offset="0.1144" stopColor="#9D8455" />
+          <stop offset="0.1224" stopColor="#A08757" />
+          <stop offset="0.1603" stopColor="#AB9461" />
+          <stop offset="0.2221" stopColor="#C5B278" />
+          <stop offset="0.2857" stopColor="#D7C687" />
+          <stop offset="0.3395" stopColor="#EADB97" />
+          <stop offset="0.4454" stopColor="#E5D593" />
+          <stop offset="0.5625" stopColor="#CFBC7F" />
+          <stop offset="0.7336" stopColor="#B59D66" />
+          <stop offset="0.8686" stopColor="#927546" />
+          <stop offset="1" stopColor="#826337" />
         </linearGradient>
       </defs>
     </svg>

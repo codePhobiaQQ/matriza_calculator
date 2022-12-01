@@ -33,10 +33,9 @@ const MainScreen = () => {
       <div className="container second">
         <div className="tabsWrapper">
           {Object.keys(tabs).map((tab, index) => (
-            <>
+            <div key={tab} className={"tabsWrapperInner"}>
               <div
                 onClick={() => changeTab(tab)}
-                key={tab}
                 className={`tab ${tab == activeTab ? "active" : ""}`}
               >
                 <span>{tab}</span>
@@ -44,7 +43,7 @@ const MainScreen = () => {
               {index + 1 != Object.keys(tabs).length && (
                 <div className="separator">/</div>
               )}
-            </>
+            </div>
           ))}
         </div>
       </div>

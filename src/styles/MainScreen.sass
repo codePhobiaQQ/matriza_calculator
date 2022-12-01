@@ -51,6 +51,10 @@ $leftSide: 60%
         display: flex
         align-items: center
         text-align: center
+        .tabsWrapperInner
+          display: flex
+          align-items: center
+          text-align: center
         .tab
           font-size: $px24
           font-family: "TTL", sans-serif
@@ -143,6 +147,11 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
           max-width: 80%
           height: 80%
           max-height: Min(#{$index} * 15, 300px)
+      span
+        margin-bottom: $px27
+        font-size: $px24
+        color: #582734
+
       input
         margin-bottom: $px24
       button
