@@ -1,11 +1,15 @@
-import React, { useCallback, useState } from "react";
+import React, { Dispatch, SetStateAction, useCallback, useState } from "react";
 import ArrowRight from "../../common/svg/ArrowRight";
 import CircleBot from "../../common/svg/CircleBot";
 import tabs from "../../../data/MainScreenData";
 import MainScreenModal from "./MainScreenModal";
 
-const MainScreen = () => {
-  const [activeTab, setActiveTab] = useState<string>(Object.keys(tabs)[0]);
+interface MainScreenI {
+  activeTab: string;
+  setActiveTab: Dispatch<SetStateAction<string>>;
+}
+
+const MainScreen = ({ activeTab, setActiveTab }: MainScreenI) => {
   const changeTab = useCallback((tab: string) => {
     setActiveTab(tab);
   }, []);

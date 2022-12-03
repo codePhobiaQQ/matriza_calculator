@@ -16,15 +16,21 @@ const Matrix = () => {
           <div
             className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-a -purple"
             data-personal-calculation-position="a"
-          ></div>
+          >
+            1
+          </div>
           <div
             className="matrix-diagram__circle js-personal-calculation-item -size-md -position-a2 -blue"
             data-personal-calculation-position="a2"
-          ></div>
+          >
+            2
+          </div>
           <div
             className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-a1 -cyan"
             data-personal-calculation-position="a1"
-          ></div>
+          >
+            3
+          </div>
           <div
             className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-a3 -green"
             data-personal-calculation-position="a3"

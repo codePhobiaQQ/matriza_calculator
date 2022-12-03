@@ -95,19 +95,23 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
     .CalculationModalInner
       transform-origin: center center
       transform: scale3d(1, 1, 1)
+      opacity: 1
 
   .CalculationModalInner
     height: $verticalSize
+    //max-height: 700px
     width: $horisontalSize
     padding: Min(#{$index} * 3, 60px)
     box-sizing: border-box
     background-color: #E8E8E8
     position: absolute
+
     top: calc((100% - #{$verticalSize}) / 2)
     left: calc((100% - #{$horisontalSize}) / 2)
-    transition: all .3s ease-in-out
-    transform: scale3d(.9, .9, .9)
+    transition: $apple
+    transform: scale3d(.95, .95, .95)
     display: flex
+    opacity: 0
     flex-flow: column
     overflow-y: auto
     h2
@@ -133,6 +137,7 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
       width: 100%
       margin-top: $px50
       flex: 1 1 auto
+      position: relative
       .form
         width: $formWidth
         display: flex
@@ -157,6 +162,15 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
         margin-bottom: $px10
       button
         @include btnMix
+      .alertWrapper
+        position: absolute
+        bottom: 0
+        opacity: 0
+        pointer-events: none
+        transition: $apple
+        &.visible
+          opacity: 1
+          pointer-events: inherit
 
 
 

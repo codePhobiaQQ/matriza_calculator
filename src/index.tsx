@@ -1,18 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { setupStore } from "./redux/store";
 import App from "./App";
 
 // ---- Styles ----
 import "./styles/MainScreen.sass";
 import "./styles/calculation/Matrix.sass";
 import "./styles/calculation/Matrix1.css";
+import "./styles/Result.sass";
 import "./styles/main.sass";
+import { Provider } from "react-redux";
+
+const store = setupStore();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );

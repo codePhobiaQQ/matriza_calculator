@@ -2,6 +2,8 @@ import React, { useCallback, useRef, useState } from "react";
 import tabs from "../../../data/MainScreenData";
 import Close from "../../common/svg/Close";
 import Select from "react-select";
+import { appSlice } from "./../../../redux/reducers/AppSlice";
+import { useDispatch } from "react-redux";
 
 interface MainScreenModalI {
   show: boolean;
@@ -27,7 +29,13 @@ interface selectValueI {
 }
 
 const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
+  const dispatch = useDispatch();
+  const { chageCalculationData } = appSlice.actions;
+  console.log();
+
   const [name, setName] = useState<string>("");
+  const [alertText, setAlertText] = useState<string>("");
+
   const editName = useCallback((e: any) => {
     setName(e.target.value);
   }, []);
@@ -43,10 +51,22 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
   const personalRef = useRef(null);
   const maleRef = useRef(null);
 
-  const calcFunction = () => {
+  const errorHandler = () => {
+    setAlertText("Введите все данные!");
+    setTimeout(() => {
+      setAlertText("");
+    }, 1500);
+  };
+  const nullData = () => {
+    setName("");
+    setDate("");
     // @ts-ignore
-    console.log(personalRef.current.props.value);
+    maleRef.current?.clearValue();
+    // @ts-ignore
+    personalRef.current?.clearValue();
+  };
 
+  const calcFunction = () => {
     // @ts-ignore
     let personalValue = personalRef.current.props.value.value;
     // @ts-ignore
@@ -54,24 +74,30 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
 
     // First Type
     if (tabs[type].id == 1) {
-      console.log(name, date, personalValue, maleValue);
-      if (name && date && personalValue && maleValue) {
-        console.log(name, date, personalValue, maleValue);
+      if (!(name && date && personalValue && maleValue)) {
+        errorHandler();
+      } else {
+        dispatch(
+          chageCalculationData({ name, date, personalValue, maleValue })
+        );
         handleClose();
+        nullData();
       }
     }
     // Second Type
     else if (tabs[type].id == 2) {
-      if (name && date && personalValue && maleValue) {
-        console.log(name, date, personalValue, maleValue);
-        handleClose();
+      if (!(name && date && personalValue && maleValue)) {
+        errorHandler();
+      } else {
+        console.log("here2");
       }
     }
     // Third Type
     else {
-      if (name && date && personalValue && maleValue) {
-        console.log(name, date, personalValue, maleValue);
-        handleClose();
+      if (!(name && date && personalValue && maleValue)) {
+        errorHandler();
+      } else {
+        console.log("here3");
       }
     }
   };
@@ -139,6 +165,13 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
               </>
             )}
             <button onClick={calcFunction}>Рассчитать</button>
+            <div
+              className={`alertWrapper ${
+                alertText.length ? "visible" : "hidden"
+              }`}
+            >
+              {alertText}
+            </div>
           </div>
           <div className="imageWrapper">{tabs[type].popupImg()}</div>
         </div>
