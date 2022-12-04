@@ -85,6 +85,27 @@ body
     max-height: 30%
 
 
+.footer
+  margin-top: Min(calc(#{$index} * 5), 100px)
+  .footerInner
+    padding: Min(calc(#{$index} * 2), 40px) 0 Min(calc(#{$index} * 3), 60px)
+    border-top: 1px solid #582734
+    display: flex
+    justify-content: space-between
+    .LogoFooter
+      height: Min(calc(#{$index} * 8), 160px)
+    ul
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      font-size: $px18
+      span
+        font-family: "TT", sans-serif
+      li
+        font-family: "TTL", sans-serif
+        cursor: pointer
+
+
 $fontSizeInput: $px20
 
 input
