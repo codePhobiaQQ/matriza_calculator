@@ -1,10 +1,12 @@
 import React from "react";
 import MatrixSvg from "../../common/svg/MatrixSvg";
+import WomanMatrix from "../../common/svg/WomanMatrix";
 
 const Matrix = () => {
   return (
     <div className="matrix">
       <div className="section-with-diagram__col-with-diagram">
+        <WomanMatrix />
         <style></style>
 
         <div className="section-with-diagram__matrix-diagram">
