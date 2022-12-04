@@ -4,11 +4,11 @@ import { setupStore } from "./redux/store";
 import App from "./App";
 
 // ---- Styles ----
-import "./styles/MainScreen.sass";
 import "./styles/calculation/Matrix.sass";
 import "./styles/calculation/Matrix1.css";
 import "./styles/Result.sass";
 import "./styles/main.sass";
+import "./styles/MainScreen.sass";
 import { Provider } from "react-redux";
 
 const store = setupStore();

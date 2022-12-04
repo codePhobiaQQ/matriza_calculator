@@ -174,24 +174,45 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
 
 
 @media screen and (max-width: 1024px)
+  .container
+    width: 90%
+
   .MainScreen
     .container
       max-width: 824px
       &.first
         flex-direction: column
+        height: inherit
+        align-items: center
         .leftSide
           order: 2
-          width: 100%
-          h1
-            font-size: Min(calc(#{$index} * 2), 40px)
-            margin-bottom: Min(calc(1vh + 1vw) * 2.5, 50px)
-
+          width: 70%
+          margin-bottom: auto
+          .leftSideInner
+            width: 100%
+            margin: auto
+            h1
+              font-size: Min(calc(#{$index} * 2), 40px)
+              margin-bottom: Min(calc(1vh + 1vw) * 2.5, 50px)
         .rightSide
           order: 1
           width: 100%
+          margin-top: auto
+          margin-bottom: Min(calc(1vh + 1vw) * 2.5, 50px)
           svg
-            height: 540px
             width: Min(calc(#{$index} * 17), 340px)
+
+      &.second
+        width: 70%
+        max-width: 824px
+        padding-bottom: Min(calc(#{$index} * 7), 140px)
+        .tabsWrapper
+          .separator
+            font-size: min(calc(1vh + 1vw) * 2, 40px)
+            margin: 0 min(calc(1vh + 1vw) * 2, 40px)
+          .tab
+            font-size: $px18
+            max-width: min(calc(1vh + 1vw) * 5, 100px)
 
   .CalculationModal
     .CalculationModalInner
