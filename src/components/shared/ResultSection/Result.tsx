@@ -4,6 +4,7 @@ import ResultTitle from "./components/ResultTitle";
 import { useAppSelector } from "../../../hooks/redux";
 import ResultTopData from "./components/ResultTopData";
 import ResultItemList from "./components/ResultItemsList/ResultItemList";
+import CalcMatrixSection from "../CalcMatrixSection";
 
 interface ResultI {
   activeTab: string;
@@ -20,6 +21,10 @@ const Result = ({ activeTab }: ResultI) => {
         <ResultTitle title={tabs[activeTab].resultTitle} />
         <ResultTopData data={calculationInputData} tab={activeTab} />
         <ResultItemList activeTab={activeTab} />
+
+        <ResultTitle classing={"mt-100"} title={"ПЕРСОНАЛЬНЫЙ РАСЧЕТ"} />
+        <ResultTopData onlyTitle={"Карта здоровья"} />
+        <CalcMatrixSection />
       </div>
     </div>
   );

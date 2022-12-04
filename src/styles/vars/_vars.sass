@@ -32,7 +32,12 @@ $smallest: 576px
 .ml-auto
   margin-left: auto !important
 
+.mt-100
+  margin-top: Min(calc(#{$index} * 5), 100px)
+
 @mixin centerMix
   display: flex
   align-items: center
   justify-content: center
+
+

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ArrowDown from "../../../../common/svg/ArrowDown";
 import dataText from "./data";
-import tabs from "../../../../../data/MainScreenData";
 
 interface ResultItemI {
   item: string;

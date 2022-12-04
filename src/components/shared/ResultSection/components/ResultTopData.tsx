@@ -2,17 +2,18 @@ import React from "react";
 import { calculationDataI } from "../../../../redux/reducers/AppSlice";
 
 interface ResultTopData {
-  tab: string;
-  data: calculationDataI;
+  tab?: string;
+  data?: calculationDataI;
+  onlyTitle?: string;
 }
 
-const ResultTopData = ({ tab, data }: ResultTopData) => {
-  console.log(data);
-
+const ResultTopData = ({ tab, data, onlyTitle }: ResultTopData) => {
   return (
     <div className={"ResultTopData"}>
-      {tab === "Совместимость" ? null : (
-        <span>{`${data.name} (${data.date
+      {onlyTitle ? (
+        onlyTitle
+      ) : tab === "Совместимость" ? null : (
+        <span>{`${data?.name} (${data?.date
           ?.split("-")
           .reverse()
           .join(".")})`}</span>
