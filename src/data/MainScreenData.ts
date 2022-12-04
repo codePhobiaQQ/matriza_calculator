@@ -5,16 +5,18 @@ import Hands from "../components/common/svg/MainPopup/Hands";
 import Pair1 from "../components/common/svg/MainPopup/Pair1";
 import Face from "../components/common/svg/MainPopup/Face";
 
+export interface TabItemI {
+  id: number;
+  mainScreenText: string;
+  image: any;
+  popupTitle: string;
+  popupText: string;
+  popupImg: any;
+  resultTitle: string;
+}
+
 interface TabsI {
-  [name: string]: {
-    id: number;
-    mainScreenText: string;
-    image: any;
-    popupTitle: string;
-    popupText: string;
-    popupImg: any;
-    resultTitle: string;
-  };
+  [name: string]: TabItemI;
 }
 
 const tabs: TabsI = {

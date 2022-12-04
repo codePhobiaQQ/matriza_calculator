@@ -67,10 +67,18 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
   };
 
   const calcFunction = () => {
+    let personalValue;
     // @ts-ignore
-    let personalValue = personalRef.current.props.value.value;
+    if (personalRef.current.props.value) {
+      // @ts-ignore
+      personalValue = personalRef.current.props.value.value;
+    }
+    let maleValue;
     // @ts-ignore
-    let maleValue = maleRef.current.props.value.value;
+    if (maleRef.current.props.value) {
+      // @ts-ignore
+      maleValue = maleRef.current.props.value.value;
+    }
 
     // First Type
     if (tabs[type].id == 1) {

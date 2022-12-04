@@ -7,16 +7,23 @@ export interface calculationDataMatrixI {
   maleValue: string;
 }
 
-type calculationDataI = calculationDataMatrixI;
+export type calculationDataI = calculationDataMatrixI;
 
 interface AppState {
   isLoading: boolean;
   calculationInputData: calculationDataI;
+  showResult: boolean;
 }
 
 const initialState: AppState = {
   isLoading: false,
-  calculationInputData: {} as calculationDataI,
+  calculationInputData: {
+    name: "test",
+    date: "2020-02-43",
+    personalValue: "personal",
+    maleValue: "male",
+  } as calculationDataI,
+  showResult: true,
 };
 
 export const appSlice = createSlice({
@@ -25,6 +32,10 @@ export const appSlice = createSlice({
   reducers: {
     chageCalculationData(state, action: PayloadAction<calculationDataI>) {
       state.calculationInputData = action.payload;
+      state.showResult = true;
+    },
+    changeShowResult(state, action: PayloadAction<boolean>) {
+      state.showResult = action.payload;
     },
     // changeLanguage(state, action: PayloadAction<ILanguage>) {
     //   state.language = action.payload;

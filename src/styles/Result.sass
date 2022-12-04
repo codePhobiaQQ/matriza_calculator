@@ -2,8 +2,57 @@
 @import "./vars/mixins"
 
 .ResultSection
-  padding: Min(calc(#{$index} * 3.5), 78px) 0
+  padding: 0
+  opacity: 0
+  pointer-events: none
+  transition: all .3s ease-in-out
+  max-height: 0
+  &.active
+    padding: Min(calc(#{$index} * 3.5), 78px) 0
+    opacity: 1
+    pointer-events: inherit
+    max-height: 10000px
   .container
     .ResultTitle
       @include titleMix
       font-size: $px29
+    .ResultTopData
+      margin-top: $px29
+      font-family: "TT", sans-serif
+      margin-bottom: Min(calc(#{$index} * 3), 60px)
+    .ResultItemsList
+      position: relative
+      z-index: 10
+      .ResultItem
+        border-top: 1px solid #582734
+        cursor: pointer
+        &:last-child
+          border-bottom: 1px solid #582734
+        .ResultItemHeader
+          padding: $px20 $px27 $px20 0
+          display: flex
+          font-size: $px18
+          justify-content: space-between
+          align-items: center
+          svg
+            transition: $apple
+            &.active
+              transform: rotate(180deg)
+        .ResultItemContent
+          max-height: 0
+          opacity: 0
+          transition: $apple
+          pointer-events: none
+
+        &.active
+          .ResultItemContent
+            color: #582734
+            opacity: 1
+            max-height: 50000px
+            pointer-events: inherit
+            h3, p
+              font-size: $px18
+              line-height: 1.4em
+              margin-bottom: $px18
+            p
+              font-family: "TTL", sans-serif
