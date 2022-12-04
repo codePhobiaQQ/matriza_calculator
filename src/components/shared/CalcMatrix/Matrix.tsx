@@ -91,15 +91,15 @@ const Matrix = () => {
               data-personal-calculation-position="e2"
             ></div>
             <div
-              className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-f -white"
+              className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-f -white"
               data-personal-calculation-position="f"
             ></div>
             <div
-              className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-g -white"
+              className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-g -white"
               data-personal-calculation-position="g"
             ></div>
             <div
-              className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-y -white"
+              className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-y -white"
               data-personal-calculation-position="y"
             ></div>
             <div
@@ -119,7 +119,7 @@ const Matrix = () => {
               data-personal-calculation-position="p4"
             ></div>
             <div
-              className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-k -white"
+              className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-k -white"
               data-personal-calculation-position="k"
             ></div>
             <div
