@@ -173,5 +173,37 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
           pointer-events: inherit
 
 
+@media screen and (max-width: 1024px)
+  .MainScreen
+    .container
+      max-width: 824px
+      &.first
+        flex-direction: column
+        .leftSide
+          order: 2
+          width: 100%
+          h1
+            font-size: Min(calc(#{$index} * 2), 40px)
+            margin-bottom: Min(calc(1vh + 1vw) * 2.5, 50px)
+
+        .rightSide
+          order: 1
+          width: 100%
+          svg
+            height: 540px
+            width: Min(calc(#{$index} * 17), 340px)
+
+  .CalculationModal
+    .CalculationModalInner
+      .formWrapper
+        flex-direction: column
+        .form
+          width: 100%
+          max-width: 500px
+        .imageWrapper
+          width: 100%
+
+
+
 
 
