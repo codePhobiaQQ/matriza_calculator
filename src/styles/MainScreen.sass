@@ -208,11 +208,11 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
         padding-bottom: Min(calc(#{$index} * 7), 140px)
         .tabsWrapper
           .separator
-            font-size: min(calc(1vh + 1vw) * 2, 40px)
-            margin: 0 min(calc(1vh + 1vw) * 2, 40px)
+            font-size: Min(calc(#{$index} * 2), 40px)
+            margin: 0 Min(calc(#{$index} * 2), 40px)
           .tab
             font-size: $px18
-            max-width: min(calc(1vh + 1vw) * 5, 100px)
+            max-width: Min(calc(#{$index} * 5), 100px)
 
   .CalculationModal
     .CalculationModalInner
