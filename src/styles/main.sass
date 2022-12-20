@@ -1,4 +1,4 @@
-@import "reset-css"
+@import "~reset-css"
 
 @import "./vars/vars"
 @import "./vars/mixins"
@@ -20,6 +20,10 @@
   font-style: normal
   font-weight: normal
   src: local('TTT'), url('./../assets/fonts/TTNormsPro-Thin.woff2') format('woff2')
+
+body
+  &.hidden
+    overflow: hidden
 
 *::-webkit-scrollbar
   width: 1px
@@ -83,6 +87,7 @@ body
     left: 0
     position: absolute
     max-height: 30%
+    max-width: 35%
 
 
 .footer

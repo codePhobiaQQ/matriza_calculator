@@ -1,13 +1,19 @@
 import React from "react";
 import MatrixSvg from "../../common/svg/MatrixSvg";
 import WomanMatrix from "../../common/svg/WomanMatrix";
+import {useAppSelector} from "../../../hooks/redux";
+
+interface Matrix {
+
+}
 
 const Matrix = () => {
+  const matrixData = useAppSelector(state => state.app.matrixData)
+
   return (
     <div className="matrix">
       <div className="section-with-diagram__col-with-diagram">
         <WomanMatrix />
-        <style></style>
 
         <div className="section-with-diagram__matrix-diagram">
           <div className="matrix-diagram">

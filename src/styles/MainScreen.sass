@@ -16,6 +16,7 @@ $leftSide: 60%
     position: absolute
     right: 0
     bottom: -50%
+    max-width: 30%
   .container
     &.first
       height: $tabHeight
@@ -26,7 +27,7 @@ $leftSide: 60%
       .leftSide
         width: $leftSide
         @include centerMix
-
+        justify-content: flex-start
         h1
           font-size: Min(#{$index} * 3.5, 70px)
           line-height: 1.2em
@@ -205,7 +206,7 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
       &.second
         width: 70%
         max-width: 824px
-        padding-bottom: Min(calc(#{$index} * 7), 140px)
+        padding-bottom: Min(calc(#{$index} * 4), 80px)
         .tabsWrapper
           .separator
             font-size: Min(calc(#{$index} * 2), 40px)

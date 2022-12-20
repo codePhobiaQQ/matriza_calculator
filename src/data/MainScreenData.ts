@@ -15,6 +15,8 @@ export interface TabItemI {
   resultTitle: string;
 }
 
+export type resultType = "Матрица онлайн" | "Совместимость" | "Матрица здоровья"
+
 interface TabsI {
   [name: string]: TabItemI;
 }
@@ -22,7 +24,7 @@ interface TabsI {
 const tabs: TabsI = {
   "Матрица онлайн": {
     id: 1,
-    mainScreenText: "Рассчитайте Матрицу судьбы",
+    mainScreenText: " Личная матрица",
     image: Woman,
     popupTitle: "БЕСПЛАТНЫЙ КАЛЬКУЛЯТОР СОВМЕСТИМОСТЬ ПО МАТРИЦЕ СУДЬБЫ ОНЛАЙН",
     popupText:
@@ -32,7 +34,7 @@ const tabs: TabsI = {
   },
   Совместимость: {
     id: 2,
-    mainScreenText: "Проверьте Вашу совместимость",
+    mainScreenText: "Матрица совместимости",
     image: Pair,
     popupTitle: "БЕСПЛАТНЫЙ КАЛЬКУЛЯТОР СОВМЕСТИМОСТЬ ПО МАТРИЦЕ СУДЬБЫ ОНЛАЙН",
     popupText:
@@ -42,7 +44,7 @@ const tabs: TabsI = {
   },
   "Матрица здоровья": {
     id: 3,
-    mainScreenText: "Проверьте Вашу матрицу здоровья",
+    mainScreenText: "Матрица здоровья",
     image: Health,
     popupTitle: "БЕСПЛАТНЫЙ КАЛЬКУЛЯТОР ЗДОРОВЬЯ ПО МАТРИЦЕ СУДЬБЫ ОНЛАЙН",
     popupText:

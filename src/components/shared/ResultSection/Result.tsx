@@ -1,35 +1,66 @@
 import React from "react";
-import tabs from "../../../data/MainScreenData";
-import ResultTitle from "./components/ResultTitle";
 import { useAppSelector } from "../../../hooks/redux";
-import ResultTopData from "./components/ResultTopData";
-import ResultItemList from "./components/ResultItemsList/ResultItemList";
 import Matrix from "../CalcMatrix/Matrix";
+import LogoFooter from "../../common/svg/LogoFooter";
+import CalcTable from "../CalcTable";
 
 interface ResultI {
   activeTab: string;
 }
 
 const Result = ({ activeTab }: ResultI) => {
-  const { calculationInputData, showResult } = useAppSelector(
+  const { showResult } = useAppSelector(
     (state) => state.app
   );
 
   return (
-    <div className={`ResultSection ${showResult ? "active" : ""}`}>
-      <div className="container">
-        <ResultTitle title={tabs[activeTab].resultTitle} />
-        <ResultTopData data={calculationInputData} tab={activeTab} />
-        <ResultItemList activeTab={activeTab} />
+    <>
+      {showResult && (<div className={`ResultSection`}>
+        <div className="container">
+          <div className="MapSection">
+            <Matrix />
+            <CalcTable />
+          </div>
+          <footer className={"footer"}>
+            <div className="container">
+              <div className="footerInner">
+                <LogoFooter />
+                <ul className="navigation footerList">
+                  <span>Навигация:</span>
+                  <li>Матрица онлайн</li>
+                  <li>Совместимость</li>
+                  <li>Матрица здоровья</li>
+                </ul>
 
-        <ResultTitle classing={"mt-100 fz"} title={"ПЕРСОНАЛЬНЫЙ РАСЧЕТ"} />
-        <ResultTopData onlyTitle={"Карта здоровья"} />
+                <ul className="navigation footerList">
+                  <span>Контакты:</span>
+                  <li>
+                    <a target={"_blank"} href="https://vk.com/club211106233">
+                      Вконтакте
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                        target={"_blank"}
+                        href="https://instagram.com/krisbressel?igshid=YTY2NzY3YTc="
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a target={"_blank"} href="https://t.me/kris_bressel">
+                      Telegram
+                    </a>
+                  </li>
+                </ul>
 
-        <div className="MapSection">
-          <Matrix />
+                <div></div>
+              </div>
+            </div>
+          </footer>
         </div>
-      </div>
-    </div>
+      </div>)}
+    </>
   );
 };
 

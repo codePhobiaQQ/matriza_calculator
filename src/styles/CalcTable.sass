@@ -1,0 +1,50 @@
+@import "./vars/vars"
+@import "./vars/mixins"
+
+.CalcTable
+  width: 47%
+  position: relative
+  z-index: 50
+
+  table.iksweb
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+    height: auto
+    font-size: $px16
+    font-family: 'TTL', sans-serif
+    color: #582734
+
+  tr
+    td, th
+      padding: $px20 0
+      border-bottom: 1px solid #1E1E1E
+
+    th
+      text-align: center
+      &:nth-child(2)
+        text-align: left
+
+    td
+      text-align: center
+      vertical-align: middle
+      &:first-child
+        padding-right: $px20
+      &:nth-child(2)
+        text-align: left
+
+      img
+
+
+      span
+        display: block
+        &.Big
+        &.Little
+          font-size: $px12
+          font-family: 'TTT', sans-serif
+          margin-top: $px3
+
+    &:last-child
+      td
+        border-bottom: none
+

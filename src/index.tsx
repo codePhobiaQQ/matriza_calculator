@@ -6,6 +6,7 @@ import App from "./App";
 // ---- Styles ----
 import "./styles/calculation/Matrix.sass";
 import "./styles/calculation/Matrix1.css";
+import "./styles/CalcTable.sass";
 import "./styles/Result.sass";
 import "./styles/main.sass";
 import "./styles/MainScreen.sass";

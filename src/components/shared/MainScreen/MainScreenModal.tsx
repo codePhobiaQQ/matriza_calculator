@@ -4,6 +4,7 @@ import Close from "../../common/svg/Close";
 import Select from "react-select";
 import { appSlice } from "./../../../redux/reducers/AppSlice";
 import { useDispatch } from "react-redux";
+import onlineMatrixCalculation from "../../../functions/onlineMatrixCalculation";
 
 interface MainScreenModalI {
   show: boolean;
@@ -30,7 +31,7 @@ interface selectValueI {
 
 const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
   const dispatch = useDispatch();
-  const { chageCalculationData } = appSlice.actions;
+  const { chageCalculationData, changeMatrixData, changeShowResult } = appSlice.actions;
   console.log();
 
   const [name, setName] = useState<string>("");
@@ -88,6 +89,9 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
         dispatch(
           chageCalculationData({ name, date, personalValue, maleValue })
         );
+        dispatch(changeMatrixData(onlineMatrixCalculation(date)))
+        dispatch(changeShowResult(true))
+
         handleClose();
         nullData();
       }
