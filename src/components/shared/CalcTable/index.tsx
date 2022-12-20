@@ -46,8 +46,8 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Аджна</span>
                         <span className={"Little"}>Судьба, эгрегоры</span>
                     </td>
-                    <td></td>
-                    <td></td>
+                    <td>{matrixData?.a2}</td>
+                    <td>{matrixData?.b2}</td>
                     <td>5</td>
                 </tr>
                 <tr>
@@ -58,8 +58,8 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Вишудха</span>
                         <span className={"Little"}>Судьба, эгрегоры</span>
                     </td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>{matrixData?.a1}</td>
+                    <td>{matrixData?.b1}</td>
                     <td>5</td>
                 </tr>
                 <tr>
@@ -70,8 +70,8 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Анахата</span>
                         <span className={"Little"}>Отношения, картина мира</span>
                     </td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>-</td>
+                    <td>-</td>
                     <td>5</td>
                 </tr>
                 <tr>

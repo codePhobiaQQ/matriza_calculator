@@ -119,7 +119,7 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
       <div className="CalculationModalInner">
         <Close clickHandler={handleClose} />
         <h2>{tabs[type].popupTitle}</h2>
-        <p>{tabs[type].popupText}</p>
+        {/*<p>{tabs[type].popupText}</p>*/}
         <div className="formWrapper">
           <div className="form">
             {(tabs[type].id == 1 || tabs[type].id == 3) && (
