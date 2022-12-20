@@ -15,6 +15,8 @@ interface CalcTableI {
 const CalcTable = ({}: CalcTableI) => {
     const matrixData = useAppSelector(state => state.app.matrixData)
 
+    console.log(matrixData)
+
     return (
         <div className={`CalcTable`}>
             <table className="iksweb">
@@ -82,8 +84,8 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Манипура</span>
                         <span className={"Little"}>Статус, владение</span>
                     </td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>{matrixData?.e}</td>
+                    <td>{matrixData?.e}</td>
                     <td>5</td>
                 </tr>
                 <tr>
@@ -94,8 +96,8 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Свадхистана</span>
                         <span className={"Little"}>Детская любовь и радость</span>
                     </td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>{matrixData?.c1}</td>
+                    <td>{matrixData?.d1}</td>
                     <td>5</td>
                 </tr>
                 <tr>
@@ -106,8 +108,8 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Муладхара</span>
                         <span className={"Little"}>Тело, материя</span>
                     </td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>{matrixData?.c}</td>
+                    <td>{matrixData?.d}</td>
                     <td>5</td>
                 </tr>
                 <tr>
@@ -118,8 +120,8 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Итого</span>
                         <span className={"Little"}>Общее энергополе</span>
                     </td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>{Number(matrixData?.a) + Number(matrixData?.a2) + Number(matrixData?.a1) + Number(matrixData?.a3) + Number(matrixData?.e) + Number(matrixData?.c1) + Number(matrixData?.c)}</td>
+                    <td>{Number(matrixData?.b) + Number(matrixData?.b2) + Number(matrixData?.b1) + Number(matrixData?.b3) + Number(matrixData?.e) + Number(matrixData?.d1) + Number(matrixData?.d)}</td>
                     <td>5</td>
                 </tr>
                 </tbody>
