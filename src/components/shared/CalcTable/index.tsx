@@ -38,7 +38,7 @@ const CalcTable = ({}: CalcTableI) => {
                     </td>
                     <td>{matrixData?.a}</td>
                     <td>{matrixData?.b}</td>
-                    <td>5</td>
+                    <td>{matrixData?.l}</td>
                 </tr>
                 <tr>
                     <td>
@@ -50,7 +50,7 @@ const CalcTable = ({}: CalcTableI) => {
                     </td>
                     <td>{matrixData?.a2}</td>
                     <td>{matrixData?.b2}</td>
-                    <td>5</td>
+                    <td>{matrixData?.l1}</td>
                 </tr>
                 <tr>
                     <td>
@@ -62,7 +62,7 @@ const CalcTable = ({}: CalcTableI) => {
                     </td>
                     <td>{matrixData?.a1}</td>
                     <td>{matrixData?.b1}</td>
-                    <td>5</td>
+                    <td>{matrixData?.l2}</td>
                 </tr>
                 <tr>
                     <td>
@@ -72,9 +72,9 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Анахата</span>
                         <span className={"Little"}>Отношения, картина мира</span>
                     </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>5</td>
+                    <td>{matrixData?.a3}</td>
+                    <td>{matrixData?.b3}</td>
+                    <td>{matrixData?.l3}</td>
                 </tr>
                 <tr>
                     <td>
@@ -86,7 +86,7 @@ const CalcTable = ({}: CalcTableI) => {
                     </td>
                     <td>{matrixData?.e}</td>
                     <td>{matrixData?.e}</td>
-                    <td>5</td>
+                    <td>{matrixData?.l4}</td>
                 </tr>
                 <tr>
                     <td>
@@ -98,7 +98,7 @@ const CalcTable = ({}: CalcTableI) => {
                     </td>
                     <td>{matrixData?.c1}</td>
                     <td>{matrixData?.d1}</td>
-                    <td>5</td>
+                    <td>{matrixData?.l5}</td>
                 </tr>
                 <tr>
                     <td>
@@ -110,7 +110,7 @@ const CalcTable = ({}: CalcTableI) => {
                     </td>
                     <td>{matrixData?.c}</td>
                     <td>{matrixData?.d}</td>
-                    <td>5</td>
+                    <td>{matrixData?.l6}</td>
                 </tr>
                 <tr>
                     <td>
@@ -122,7 +122,7 @@ const CalcTable = ({}: CalcTableI) => {
                     </td>
                     <td>{Number(matrixData?.a) + Number(matrixData?.a2) + Number(matrixData?.a1) + Number(matrixData?.a3) + Number(matrixData?.e) + Number(matrixData?.c1) + Number(matrixData?.c)}</td>
                     <td>{Number(matrixData?.b) + Number(matrixData?.b2) + Number(matrixData?.b1) + Number(matrixData?.b3) + Number(matrixData?.e) + Number(matrixData?.d1) + Number(matrixData?.d)}</td>
-                    <td>5</td>
+                    <td>{Number(matrixData?.l) + Number(matrixData?.l1) + Number(matrixData?.l2) + Number(matrixData?.l3) + Number(matrixData?.l4) + Number(matrixData?.l5) + Number(matrixData?.l6)}</td>
                 </tr>
                 </tbody>
             </table>
