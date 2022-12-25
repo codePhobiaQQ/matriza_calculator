@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./hoc/Header";
 import MainScreen from "./components/shared/MainScreen";
 import Result from "./components/shared/ResultSection/Result";
 import tabs from "./data/MainScreenData";
 import {useAppSelector} from "./hooks/redux";
+import Layout from "./hoc/Layout";
 
 function App() {
   const [activeTab, setActiveTab] = useState<string>(Object.keys(tabs)[0]);
@@ -11,10 +11,10 @@ function App() {
 
   return (
       <body className={showResult ? "" : "hidden"}>
-          <Header>
+          <Layout>
               <MainScreen activeTab={activeTab} setActiveTab={setActiveTab} />
               <Result activeTab={activeTab} />
-          </Header>
+          </Layout>
       </body>
   );
 }

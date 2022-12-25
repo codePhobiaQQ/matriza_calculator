@@ -5,7 +5,7 @@ import CircleTop from "../components/common/svg/CircleTop";
 import LogoFooter from "../components/common/svg/LogoFooter";
 
 interface IHeader {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const Header = ({ children }: IHeader) => {

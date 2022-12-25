@@ -1,6 +1,13 @@
 import React from "react";
 import MatrixSvg from "../../common/svg/MatrixSvg";
 import WomanMatrix from "../../common/svg/WomanMatrix";
+import tableIcon1 from "./../../../assets/svg/tableIcon1.svg"
+import tableIcon2 from "./../../../assets/svg/tableIcon2.svg"
+import tableIcon3 from "./../../../assets/svg/tableIcon3.svg"
+import tableIcon4 from "./../../../assets/svg/tableIcon4.svg"
+import tableIcon5 from "./../../../assets/svg/tableIcon5.svg"
+import tableIcon6 from "./../../../assets/svg/tableIcon6.svg"
+import tableIcon7 from "./../../../assets/svg/tableIcon7.svg"
 import {useAppSelector} from "../../../hooks/redux";
 
 interface Matrix {
@@ -26,44 +33,56 @@ const Matrix = () => {
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-a -purple"
               data-personal-calculation-position="a"
             >
-              1
+              <img src={tableIcon1} alt="Icon1"/>
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-a2 -blue"
               data-personal-calculation-position="a2"
             >
-              2
+              <img src={tableIcon2} alt="Icon2"/>
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-a1 -cyan"
               data-personal-calculation-position="a1"
             >
-              3
+              <img src={tableIcon3} alt="Icon1"/>
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-a3 -green"
               data-personal-calculation-position="a3"
-            ></div>
+            >
+              <img src={tableIcon4} alt="Icon4"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-b -purple"
               data-personal-calculation-position="b"
-            ></div>
+            >
+              <img src={tableIcon1} alt="icon1"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-b2 -blue"
               data-personal-calculation-position="b2"
-            ></div>
+            >
+              <img src={tableIcon2} alt="Icon2"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-b1 -cyan"
               data-personal-calculation-position="b1"
-            ></div>
+            >
+              <img src={tableIcon3} alt="Icon3"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-b3 -green"
               data-personal-calculation-position="b3"
-            ></div>
+            >
+              <img src={tableIcon4} alt="Icon4"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-c -red"
               data-personal-calculation-position="c"
-            ></div>
+            >
+              <img src={tableIcon7} alt="Icon7"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-c2 -white"
               data-personal-calculation-position="c2"
@@ -71,11 +90,15 @@ const Matrix = () => {
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-c1 -orange"
               data-personal-calculation-position="c1"
-            ></div>
+            >
+              <img src={tableIcon6} alt="Icon6"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-d -red"
               data-personal-calculation-position="d"
-            ></div>
+            >
+              <img src={tableIcon7} alt="Icon7"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-d2 -white"
               data-personal-calculation-position="d2"
@@ -83,11 +106,15 @@ const Matrix = () => {
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-d1 -orange"
               data-personal-calculation-position="d1"
-            ></div>
+            >
+              <img src={tableIcon6} alt="Icon6"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -position-e -yellow"
               data-personal-calculation-position="e"
-            ></div>
+            >
+              <img src={tableIcon5} alt="Icon5"/>
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-e1 -white"
               data-personal-calculation-position="e1"
