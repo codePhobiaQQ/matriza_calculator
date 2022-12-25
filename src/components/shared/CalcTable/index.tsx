@@ -15,8 +15,6 @@ interface CalcTableI {
 const CalcTable = ({}: CalcTableI) => {
     const matrixData = useAppSelector(state => state.app.matrixData)
 
-    console.log(matrixData)
-
     return (
         <div className={`CalcTable`}>
             <table className="iksweb">

@@ -6,7 +6,9 @@ interface ResultTitleI {
 }
 
 const ResultTitle = ({ title, classing }: ResultTitleI) => {
-  return <h3 className={`ResultTitle ${classing}`}>{title}</h3>;
+  return <div className={"container"}>
+    <h3 className={`ResultTitle ${classing}`}>{title}</h3>
+  </div>;
 };
 
 export default ResultTitle;

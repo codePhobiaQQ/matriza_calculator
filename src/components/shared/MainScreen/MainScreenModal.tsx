@@ -33,7 +33,6 @@ interface selectValueI {
 const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
   const dispatch = useDispatch();
   const { chageCalculationData, changeMatrixData, changeShowResult } = appSlice.actions;
-  console.log();
 
   const [name, setName] = useState<string>("");
   const [alertText, setAlertText] = useState<string>("");
