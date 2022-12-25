@@ -13,7 +13,15 @@ const DecriptPeriods = ({classing = "", periods = [1, 2, 3]}: DecriptPeriodsI) =
   const [periodsResult, setPeriodsResult] = useState<numbType[]>();
   useEffect(() => {
     // @ts-ignore
-    setPeriodsResult([...new Set(Object.values(matrixData))])
+    const result = [...new Set(Object.values(matrixData))]
+    // @ts-ignore
+    result.sort((a, b) => {
+      if  (a < b) return -1
+      else if (a > b) return 1
+      else return 0
+    })
+    // @ts-ignore
+    setPeriodsResult(result)
   }, [matrixData])
 
   return (
