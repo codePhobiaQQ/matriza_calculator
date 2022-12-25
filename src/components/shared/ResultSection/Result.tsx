@@ -8,6 +8,7 @@ import tabs from "../../../data/MainScreenData";
 import Description1 from "./components/descriptions/Description1";
 import Description2 from "./components/descriptions/Description2";
 import Description3 from "./components/descriptions/Description3";
+import DecriptPeriods from "../DecriptPeriods/DecriptPeriods";
 
 interface ResultI {
   activeTab: string;
@@ -45,6 +46,7 @@ const Result = ({ activeTab }: ResultI) => {
               }
             </div>
             <BottomInfoSection />
+            <DecriptPeriods />
           </div>
         </div>
      </>)}
