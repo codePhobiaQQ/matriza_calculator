@@ -10,9 +10,11 @@
       font-size: $px22
       font-family: "TTL", sans-serif
       margin-bottom: Min(calc(#{$index} * 3), 60px)
+
     .ResultItemsList
       position: relative
       z-index: 10
+      margin-top: $px50
       .ResultItem
         border-top: 1px solid #582734
         cursor: pointer
@@ -33,12 +35,14 @@
           opacity: 0
           transition: $apple
           pointer-events: none
+          p
+            max-height: 0
 
         &.active
           .ResultItemContent
             color: #582734
             opacity: 1
-            max-height: 50000px
+            max-height: 5000px
             pointer-events: inherit
             h3, p
               font-size: $px18
@@ -46,6 +50,7 @@
               margin-bottom: $px18
             p
               font-family: "TTL", sans-serif
+              max-height: 50000px
 
     .MapSection
       display: flex

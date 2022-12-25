@@ -3,11 +3,12 @@ import ArrowDown from "../../../../common/svg/ArrowDown";
 import dataText from "./data";
 
 interface ResultItemI {
-  item: string;
-  activeTab: string;
+  item: string[];
+  periodNumb: number;
+  // activeTab: string;
 }
 
-const ResultItem = ({ activeTab, item }: ResultItemI) => {
+const ResultItem = ({ item, periodNumb }: ResultItemI) => {
   const [isTabOpen, setIsTabOpen] = useState<boolean>(false);
   const editOpenHandler = () => {
     setIsTabOpen((prevState) => !prevState);
@@ -19,13 +20,17 @@ const ResultItem = ({ activeTab, item }: ResultItemI) => {
       className={`ResultItem ${isTabOpen ? "active" : ""}`}
     >
       <div className="ResultItemHeader">
-        <span>{item}</span>
+        <span>{"Период " + periodNumb }</span>
         <ArrowDown isActive={isTabOpen} clickHandler={editOpenHandler} />
       </div>
       <div
         className="ResultItemContent"
-        dangerouslySetInnerHTML={{ __html: dataText[activeTab][item]["1"] }}
-      ></div>
+        // dangerouslySetInnerHTML={{ __html: dataText[activeTab][item]["1"] }}
+      >
+        {item.map((text, index) => (
+          <p key={"text" + index}>{text}</p>
+        ))}
+      </div>
     </div>
   );
 };
