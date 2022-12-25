@@ -4,6 +4,7 @@ import Matrix from "../CalcMatrix/Matrix";
 import LogoFooter from "../../common/svg/LogoFooter";
 import CalcTable from "../CalcTable";
 import BottomInfoSection from "../BottomInfoSection/BottomInfoSection";
+import ResultTitle from "./components/ResultTitle";
 
 interface ResultI {
   activeTab: string;
@@ -16,15 +17,18 @@ const Result = ({ activeTab }: ResultI) => {
 
   return (
     <>
-      {showResult && (<div className={`ResultSection`}>
-        <div className="container">
-          <div className="MapSection">
-            <Matrix />
-            <CalcTable />
+      {showResult && (
+       <>
+         <div className={`ResultSection`}>
+          <div className="container">
+            <div className="MapSection">
+              <Matrix />
+              <CalcTable />
+            </div>
+            <BottomInfoSection />
           </div>
-          <BottomInfoSection />
         </div>
-      </div>)}
+     </>)}
     </>
   );
 };

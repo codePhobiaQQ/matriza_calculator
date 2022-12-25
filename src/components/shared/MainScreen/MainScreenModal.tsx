@@ -5,6 +5,7 @@ import Select from "react-select";
 import { appSlice } from "./../../../redux/reducers/AppSlice";
 import { useDispatch } from "react-redux";
 import onlineMatrixCalculation from "../../../functions/onlineMatrixCalculation";
+import sovmestMatrixCalculation from "../../../functions/sovmestMatrixCalculation";
 
 interface MainScreenModalI {
   show: boolean;
@@ -69,20 +70,20 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
 
   const calcFunction = () => {
     let personalValue;
-    // @ts-ignore
-    if (personalRef.current.props.value) {
-      // @ts-ignore
-      personalValue = personalRef.current.props.value.value;
-    }
-    let maleValue;
-    // @ts-ignore
-    if (maleRef.current.props.value) {
-      // @ts-ignore
-      maleValue = maleRef.current.props.value.value;
-    }
 
     // First Type
     if (tabs[type].id == 1) {
+      // @ts-ignore
+      if (personalRef.current.props.value) {
+        // @ts-ignore
+        personalValue = personalRef.current.props.value.value;
+      }
+      let maleValue;
+      // @ts-ignore
+      if (maleRef.current.props.value) {
+        // @ts-ignore
+        maleValue = maleRef.current.props.value.value;
+      }
       if (!(name && date && personalValue && maleValue)) {
         errorHandler();
       } else {
@@ -91,22 +92,26 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
         );
         dispatch(changeMatrixData(onlineMatrixCalculation(date)))
         dispatch(changeShowResult(true))
-
         handleClose();
         nullData();
       }
     }
+
+
     // Second Type
     else if (tabs[type].id == 2) {
-      if (!(name && date && personalValue && maleValue)) {
+      if (!(date1 && date)) {
         errorHandler();
       } else {
-        console.log("here2");
+        dispatch(changeMatrixData(sovmestMatrixCalculation(date, date1)))
+        dispatch(changeShowResult(true))
+        handleClose();
+        nullData();
       }
     }
     // Third Type
     else {
-      if (!(name && date && personalValue && maleValue)) {
+      if (true) {
         errorHandler();
       } else {
         console.log("here3");

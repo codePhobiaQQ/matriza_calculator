@@ -1,4 +1,3 @@
-import { calculationDataMatrixI } from "../redux/reducers/AppSlice";
 import fixTwentyTwo, {sumOfDecimals} from "../utils/fixTwentyTwo";
 
 export interface matrixData {
