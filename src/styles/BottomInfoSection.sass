@@ -2,7 +2,7 @@
 @import "./vars/mixins"
 
 .BottomInfoSection
-  margin-top: Min(calc(#{$index} * 4), 84px)
+  margin-top: Min(calc(#{$index} * 5), 105px)
   display: flex
   justify-content: space-between
 
@@ -15,13 +15,20 @@
     p
       font-size: #{$px14}
       max-width: Min(calc(#{$index} * 15), 300px)
+      height: Min(calc(#{$index} * 3.5), 70px)
+      font-family: "TTL", sans-serif
 
     .BottomInfoSection_resultLines
-      margin-top: #{$px24}
+      margin-top: #{$px30}
       .BottomInfoSection_resultLine
         display: flex
         align-items: center
         justify-content: space-between
         width: Min(calc(#{$index} * 5), 100px)
+      .BottomInfoSection_resultLine_title
+        font-size: #{$px18}
+      .BottomInfoSection_resultLine_number
+        font-family: "TTL", sans-serif
+        font-size: #{$px18}
       .BottomInfoSection_resultLine_center
         width: Min(calc(#{$index} * 7), 140px)
