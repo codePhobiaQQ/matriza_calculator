@@ -10,6 +10,7 @@ import "./styles/CalcTable.sass";
 import "./styles/Result.sass";
 import "./styles/main.sass";
 import "./styles/MainScreen.sass";
+import "./styles/BottomInfoSection.sass";
 import { Provider } from "react-redux";
 
 const store = setupStore();

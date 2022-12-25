@@ -1,0 +1,27 @@
+@import "./vars/vars"
+@import "./vars/mixins"
+
+.BottomInfoSection
+  margin-top: Min(calc(#{$index} * 4), 84px)
+  display: flex
+  justify-content: space-between
+
+  .BottomInfoSection_side
+    width: 33.3%
+    line-height: 1.4em
+    h3
+      font-size: #{$px20}
+      margin-bottom: #{$px27}
+    p
+      font-size: #{$px14}
+      max-width: Min(calc(#{$index} * 15), 300px)
+
+    .BottomInfoSection_resultLines
+      margin-top: #{$px24}
+      .BottomInfoSection_resultLine
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: Min(calc(#{$index} * 5), 100px)
+      .BottomInfoSection_resultLine_center
+        width: Min(calc(#{$index} * 7), 140px)

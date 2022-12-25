@@ -3,6 +3,7 @@ import { useAppSelector } from "../../../hooks/redux";
 import Matrix from "../CalcMatrix/Matrix";
 import LogoFooter from "../../common/svg/LogoFooter";
 import CalcTable from "../CalcTable";
+import BottomInfoSection from "../BottomInfoSection/BottomInfoSection";
 
 interface ResultI {
   activeTab: string;
@@ -21,6 +22,7 @@ const Result = ({ activeTab }: ResultI) => {
             <Matrix />
             <CalcTable />
           </div>
+          <BottomInfoSection />
         </div>
       </div>)}
     </>
