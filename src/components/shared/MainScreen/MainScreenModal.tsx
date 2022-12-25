@@ -167,7 +167,7 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
                   onChange={editDate}
                   type="date"
                 />
-                <span>Партнер 2</span>
+                <span className={"SecondPartner"}>Партнер 2</span>
                 <input
                   placeholder={"Дата рождения*"}
                   value={date1}

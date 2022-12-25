@@ -144,6 +144,9 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
         display: flex
         flex-direction: column
 
+        .SecondPartner
+          margin-top: $px30
+
         .selectContainer
           height: $px45
 
@@ -159,7 +162,7 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
           height: 70%
           max-height: Min(#{$index} * 12.5, 250px)
       span
-        margin-bottom: $px27
+        margin-bottom: $px20
         font-size: $px24
         color: #582734
 
@@ -169,6 +172,8 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
 
       button
         @include btnMix
+        margin-top: $px50
+
       .alertWrapper
         position: absolute
         bottom: 0
