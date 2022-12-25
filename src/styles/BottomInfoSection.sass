@@ -8,14 +8,14 @@
 
   .BottomInfoSection_side
     width: 33.3%
-    line-height: 1.4em
     h3
       font-size: #{$px20}
       margin-bottom: #{$px27}
     p
-      font-size: #{$px14}
+      font-size: #{$px16}
       max-width: Min(calc(#{$index} * 15), 300px)
-      height: Min(calc(#{$index} * 3.5), 70px)
+      height: Min(calc(#{$index} * 4), 80px)
+      line-height: 1.6em
       font-family: "TTL", sans-serif
 
     .BottomInfoSection_resultLines
@@ -32,3 +32,20 @@
         font-size: #{$px18}
       .BottomInfoSection_resultLine_center
         width: Min(calc(#{$index} * 7), 140px)
+
+@media all and (max-width: 768px)
+  .BottomInfoSection
+    flex-wrap: wrap
+    .BottomInfoSection_side
+      width: 50%
+      p
+        height: inherit
+      &:last-child
+        margin-top: $px50
+
+@media all and (max-width: 576px)
+  .BottomInfoSection
+    .BottomInfoSection_side
+      width: 100%
+      &:nth-child(2)
+        margin-top: $px50

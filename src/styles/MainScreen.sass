@@ -143,6 +143,10 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
         width: $formWidth
         display: flex
         flex-direction: column
+
+        .selectContainer
+          height: $px45
+
       .imageWrapper
         flex: 1 0 0
         display: flex
@@ -160,7 +164,9 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
         color: #582734
 
       input
+        height: $px45
         margin-bottom: $px10
+
       button
         @include btnMix
       .alertWrapper

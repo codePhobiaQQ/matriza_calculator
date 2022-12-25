@@ -22,9 +22,9 @@ interface TabsI {
 }
 
 const tabs: TabsI = {
-  "Матрица онлайн": {
+  "Личная матрица": {
     id: 1,
-    mainScreenText: " Личная матрица",
+    mainScreenText: "Личная матрица",
     image: Woman,
     popupTitle: "КАЛЬКУЛЯТОР ПО МАТРИЦЕ СУДЬБЫ",
     popupText:
@@ -32,7 +32,7 @@ const tabs: TabsI = {
     popupImg: Hands,
     resultTitle: "ИНФОРМАЦИЯ О ВАС",
   },
-  Совместимость: {
+  "Матрица совместимости": {
     id: 2,
     mainScreenText: "Матрица совместимости",
     image: Pair,
