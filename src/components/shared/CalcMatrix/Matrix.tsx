@@ -10,15 +10,15 @@ import tableIcon6 from "./../../../assets/svg/tableIcon6.svg"
 import tableIcon7 from "./../../../assets/svg/tableIcon7.svg"
 import {useAppSelector} from "../../../hooks/redux";
 
-interface Matrix {
-
+interface MatrixI {
+  classing?: string
 }
 
-const Matrix = () => {
+const Matrix = ({classing}: MatrixI) => {
   const matrixData = useAppSelector(state => state.app.matrixData)
 
   return (
-    <div className="matrix">
+    <div className={`matrix ${classing}`}>
       <div className="section-with-diagram__col-with-diagram">
         <WomanMatrix />
 
