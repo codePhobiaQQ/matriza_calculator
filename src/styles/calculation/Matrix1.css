@@ -188,6 +188,7 @@
 }
 .matrix-diagram__circle.bronze {
     background: linear-gradient(90deg, #7F613B -0.08%, #876A42 4.23%, #9D8455 11.37%, #A08757 12.17%, #AB9461 15.96%, #C5B278 22.14%, #D7C687 28.5%, #EADB97 33.89%, #E5D593 44.48%, #CFBC7F 56.2%, #B59D66 73.32%, #927546 86.82%, #826337 99.97%);
+    color: #fff
 }
 .matrix-diagram__circle.-size-lg-transparent {
     background: #E8E8E8;

@@ -34,156 +34,194 @@ const Matrix = ({classing, activeTab}: MatrixI) => {
               className={`matrix-diagram__circle js-personal-calculation-item -size-lg ${activeTab !== "Матрица здоровья" ? "bronze" : ""} -position-a -purple`}
               data-personal-calculation-position="a"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon1} alt="Icon1"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon1} alt="Icon1"/> : matrixData?.a}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-a2 -blue"
               data-personal-calculation-position="a2"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon2} alt="Icon2"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon2} alt="Icon2"/> : matrixData?.a2}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-a1 -cyan"
               data-personal-calculation-position="a1"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon3} alt="Icon1"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon3} alt="Icon1"/> : matrixData?.a1}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-a3 -green"
               data-personal-calculation-position="a3"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon4} alt="Icon4"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon4} alt="Icon4"/> : matrixData?.a3}
             </div>
             <div
               className={`matrix-diagram__circle js-personal-calculation-item -size-lg -position-b -purple ${activeTab !== "Матрица здоровья" ? "bronze" : ""}`}
               data-personal-calculation-position="b"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon1} alt="icon1"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon1} alt="icon1"/> : matrixData?.b}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-b2 -blue"
               data-personal-calculation-position="b2"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon2} alt="Icon2"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon2} alt="Icon2"/> : matrixData?.b2}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-b1 -cyan"
               data-personal-calculation-position="b1"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon3} alt="Icon3"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon3} alt="Icon3"/> : matrixData?.b1}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-b3 -green"
               data-personal-calculation-position="b3"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon4} alt="Icon4"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon4} alt="Icon4"/> : matrixData?.b3}
             </div>
             <div
               className={`matrix-diagram__circle js-personal-calculation-item -size-lg -position-c -red ${activeTab !== "Матрица здоровья" ? "bronze" : ""}`}
               data-personal-calculation-position="c"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon7} alt="Icon7"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon7} alt="Icon7"/> : matrixData?.c}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-c2 -white"
               data-personal-calculation-position="c2"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.c2}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-c1 -orange"
               data-personal-calculation-position="c1"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon6} alt="Icon6"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon6} alt="Icon6"/> : matrixData?.c1}
             </div>
             <div
               className={`matrix-diagram__circle js-personal-calculation-item -size-lg -position-d -red ${activeTab !== "Матрица здоровья" ? "bronze" : ""}`}
               data-personal-calculation-position="d"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon7} alt="Icon7"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon7} alt="Icon7"/> : matrixData?.d}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-d2 -white"
               data-personal-calculation-position="d2"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.d2}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-d1 -orange"
               data-personal-calculation-position="d1"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon6} alt="Icon6"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon6} alt="Icon6"/> : matrixData?.d1}
             </div>
             <div
               className={`matrix-diagram__circle js-personal-calculation-item -size-lg -position-e -yellow ${activeTab !== "Матрица здоровья" ? "bronze" : ""}`}
               data-personal-calculation-position="e"
             >
-              {activeTab == "Матрица здоровья" && <img src={tableIcon5} alt="Icon5"/>}
+              {activeTab == "Матрица здоровья" ? <img src={tableIcon5} alt="Icon5"/> : matrixData?.e}
             </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-e1 -white"
               data-personal-calculation-position="e1"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.e1}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-e2 -white"
               data-personal-calculation-position="e2"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.e2}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-f -white"
               data-personal-calculation-position="f"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.f}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-g -white"
               data-personal-calculation-position="g"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.g}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-y -white"
               data-personal-calculation-position="y"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.y}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-p1 -white"
               data-personal-calculation-position="p1"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.p1}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-p2 -white"
               data-personal-calculation-position="p2"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.p2}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-p3 -white"
               data-personal-calculation-position="p3"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.p3}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-p4 -white"
               data-personal-calculation-position="p4"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.p4}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-lg -size-lg-transparent -position-k -white"
               data-personal-calculation-position="k"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.k}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-s1 -white"
               data-personal-calculation-position="s1"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.s1}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-s2 -white"
               data-personal-calculation-position="s2"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.s2}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-md -position-s3 -white"
               data-personal-calculation-position="s3"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.s3}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-s4 -white"
               data-personal-calculation-position="s4"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.s4}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-x -white"
               data-personal-calculation-position="x"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.x}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-x1 -white"
               data-personal-calculation-position="x1"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.x1}
+            </div>
             <div
               className="matrix-diagram__circle js-personal-calculation-item -size-sm -position-x2 -white"
               data-personal-calculation-position="x2"
-            ></div>
+            >
+              {activeTab !== "Матрица здоровья" && matrixData?.x2}
+            </div>
 
             {/*numbers*/}
             <div
