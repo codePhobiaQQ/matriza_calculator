@@ -46,7 +46,7 @@ const Result = ({ activeTab }: ResultI) => {
               }
             </div>
             <BottomInfoSection />
-            <DecriptPeriods />
+            {/*<DecriptPeriods />*/}
           </div>
         </div>
      </>)}
