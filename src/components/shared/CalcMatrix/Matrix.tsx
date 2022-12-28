@@ -392,61 +392,61 @@ const Matrix = ({classing, activeTab}: MatrixI) => {
               className="matrix-diagram__number js-personal-calculation-item -position-g3"
               data-personal-calculation-position="g3"
             >
-              {/*{matrixData?.age65_1}*/}
+              {activeTab == "Личная матрица" && matrixData?.age65_1}
             </div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-g2"
               data-personal-calculation-position="g2"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age65_2}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-g4"
               data-personal-calculation-position="g4"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age65_3}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-g1 -bold"
               data-personal-calculation-position="g1"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age65}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-g7"
               data-personal-calculation-position="g7"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age70_1}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-g5"
               data-personal-calculation-position="g5"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age70_2}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-g6"
               data-personal-calculation-position="g6"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age70_3}</div>
 
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-t3"
               data-personal-calculation-position="t3"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age75_1}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-t2"
               data-personal-calculation-position="t2"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age75_2}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-t4"
               data-personal-calculation-position="t4"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age75_3}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-t1 -bold"
               data-personal-calculation-position="t1"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age75}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-t6"
               data-personal-calculation-position="t6"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age80_1}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-t5"
               data-personal-calculation-position="t5"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age80_2}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-t7"
               data-personal-calculation-position="t7"
-            ></div>
+            >{activeTab == "Личная матрица" && matrixData?.age80_3}</div>
 
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-a5"

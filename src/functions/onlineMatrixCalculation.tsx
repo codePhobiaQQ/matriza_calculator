@@ -103,6 +103,21 @@ export interface matrixData {
     age60_2: number;
     age60_3: number;
     age60: number;
+    age65_1: number;
+    age65_2: number;
+    age65_3: number;
+    age65: number;
+    age70_1: number;
+    age70_2: number;
+    age70_3: number;
+    age70: number;
+    age75_1: number;
+    age75_2: number;
+    age75_3: number;
+    age75: number;
+    age80_1: number;
+    age80_2: number;
+    age80_3: number;
 
     years: number;
 
@@ -172,6 +187,8 @@ const onlineMatrixCalculation = (date: string): matrixData => {
     const age40 = c
     const age60 = d
     const age50 = fixTwentyTwo(age40 + age60)
+    const age70 = k
+
 
     const age5 = fixTwentyTwo(age0 + age10)
     const age15 = fixTwentyTwo(age10 + age20)
@@ -179,6 +196,8 @@ const onlineMatrixCalculation = (date: string): matrixData => {
     const age35 = fixTwentyTwo(age30 + age40)
     const age45 = fixTwentyTwo(age40 + age50)
     const age55 = fixTwentyTwo(age50 + age60)
+    const age65 = fixTwentyTwo(age60 + age70)
+    const age75 = fixTwentyTwo(age70 + age0)
 
     const age5_2 = fixTwentyTwo(age0 + age5)
     const age5_1 = fixTwentyTwo(age0 + age5_2)
@@ -228,6 +247,22 @@ const onlineMatrixCalculation = (date: string): matrixData => {
     const age60_1 = fixTwentyTwo(age55 + age60_2)
     const age60_3 = fixTwentyTwo(age60_2 + age60)
 
+    const age65_2 = fixTwentyTwo(age60 + age65)
+    const age65_1 = fixTwentyTwo(age60 + age65_2)
+    const age65_3 = fixTwentyTwo(age65_2 + age65)
+
+    const age70_2 = fixTwentyTwo(age65 + age70)
+    const age70_1 = fixTwentyTwo(age65 + age70_2)
+    const age70_3 = fixTwentyTwo(age70_2 + age70)
+
+    const age75_2 = fixTwentyTwo(age70 + age75)
+    const age75_1 = fixTwentyTwo(age70 + age75_2)
+    const age75_3 = fixTwentyTwo(age75_2 + age75)
+
+    const age80_2 = fixTwentyTwo(age0 + age75)
+    const age80_1 = fixTwentyTwo(age75 + age80_2)
+    const age80_3 = fixTwentyTwo(age80_2 + age0)
+
     const h = fixTwentyTwo(b + d)
     const j = fixTwentyTwo(a + c)
     const n = fixTwentyTwo(f + y)
@@ -265,7 +300,7 @@ const onlineMatrixCalculation = (date: string): matrixData => {
 
     return {
         a, b, c, d, e, f, g, y, k, a1, b1, c1, d1, d2, x, t1, t2, a2, a3, b2, b3, c2, e1, e2, p1, p2, p3, p4, s1, s2, s3, s4, x1, x2,
-        age0, age5, age5_1, age5_2, age5_3, age10, age10_1, age10_2, age10_3, age15, age15_1, age15_2, age15_3, age20, age20_1, age20_2, age20_3, age25, age25_1, age25_2, age25_3, age30, age30_1, age30_2, age30_3, age35, age35_1, age35_2, age35_3, age40, age40_1, age40_2, age40_3, age45, age45_1, age45_2, age45_3, age50, age50_1, age50_2, age50_3, age55, age55_1, age55_2, age55_3, age60, age60_1, age60_2, age60_3, l, l1, l2, l3, l4, l5, l6, h, j, n, t, years
+        age0, age5, age5_1, age5_2, age5_3, age10, age10_1, age10_2, age10_3, age15, age15_1, age15_2, age15_3, age20, age20_1, age20_2, age20_3, age25, age25_1, age25_2, age25_3, age30, age30_1, age30_2, age30_3, age35, age35_1, age35_2, age35_3, age40, age40_1, age40_2, age40_3, age45, age45_1, age45_2, age45_3, age50, age50_1, age50_2, age50_3, age55, age55_1, age55_2, age55_3, age60, age60_1, age60_2, age60_3, age65, age65_1, age65_2, age65_3, age70, age70_1, age70_2, age70_3, age75, age75_1, age75_2, age75_3, age80_1, age80_2, age80_3, l, l1, l2, l3, l4, l5, l6, h, j, n, t, years
     }
 };
 
