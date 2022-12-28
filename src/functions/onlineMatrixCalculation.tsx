@@ -226,7 +226,6 @@ const onlineMatrixCalculation = (date: string): matrixData => {
     const age60_1 = fixTwentyTwo(age55 + age60_2)
     const age60_3 = fixTwentyTwo(age60_2 + age60)
 
-
     const h = fixTwentyTwo(b + d)
     const j = fixTwentyTwo(a + c)
     const n = fixTwentyTwo(f + y)

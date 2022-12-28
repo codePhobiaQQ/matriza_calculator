@@ -110,10 +110,27 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
     }
     // Third Type
     else {
-      if (true) {
+      // @ts-ignore
+      if (personalRef.current.props.value) {
+        // @ts-ignore
+        personalValue = personalRef.current.props.value.value;
+      }
+      let maleValue;
+      // @ts-ignore
+      if (maleRef.current.props.value) {
+        // @ts-ignore
+        maleValue = maleRef.current.props.value.value;
+      }
+      if (!(name && date && personalValue && maleValue)) {
         errorHandler();
       } else {
-        console.log("here3");
+        dispatch(
+          chageCalculationData({ name, date, personalValue, maleValue })
+        );
+        dispatch(changeMatrixData(onlineMatrixCalculation(date)))
+        dispatch(changeShowResult(true))
+        handleClose();
+        nullData();
       }
     }
   };
