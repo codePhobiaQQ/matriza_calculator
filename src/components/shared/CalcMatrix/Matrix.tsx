@@ -12,9 +12,10 @@ import {useAppSelector} from "../../../hooks/redux";
 
 interface MatrixI {
   classing?: string
+  activeTab?: string;
 }
 
-const Matrix = ({classing}: MatrixI) => {
+const Matrix = ({classing, activeTab}: MatrixI) => {
   const matrixData = useAppSelector(state => state.app.matrixData)
 
   return (

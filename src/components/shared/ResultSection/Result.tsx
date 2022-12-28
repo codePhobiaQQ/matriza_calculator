@@ -40,7 +40,7 @@ const Result = ({ activeTab }: ResultI) => {
            {chooseDescription()}
           <div className="container">
             <div className="MapSection">
-              <Matrix classing={`${tabs[activeTab].id !== 3 ? "m-auto" : ""}`} />
+              <Matrix activeTab={activeTab} classing={`${tabs[activeTab].id !== 3 ? "m-auto" : ""}`} />
               {
                 tabs[activeTab].id === 3 && <CalcTable/>
               }
