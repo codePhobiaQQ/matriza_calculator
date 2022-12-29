@@ -46,7 +46,7 @@ const Result = ({ activeTab }: ResultI) => {
               }
             </div>
             <BottomInfoSection />
-            <DecriptPeriods />
+            {tabs[activeTab].id === 1 && <DecriptPeriods />}
           </div>
         </div>
      </>)}

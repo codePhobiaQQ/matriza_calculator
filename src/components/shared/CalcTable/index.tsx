@@ -7,6 +7,7 @@ import tableIcon5 from "./../../../assets/svg/tableIcon5.svg"
 import tableIcon6 from "./../../../assets/svg/tableIcon6.svg"
 import tableIcon7 from "./../../../assets/svg/tableIcon7.svg"
 import {useAppSelector} from "../../../hooks/redux";
+import fixTwentyTwo from "../../../utils/fixTwentyTwo";
 
 interface CalcTableI {
 
@@ -118,9 +119,9 @@ const CalcTable = ({}: CalcTableI) => {
                         <span className={"Big"}>Итого</span>
                         <span className={"Little"}>Общее энергополе</span>
                     </td>
-                    <td>{Number(matrixData?.a) + Number(matrixData?.a2) + Number(matrixData?.a1) + Number(matrixData?.a3) + Number(matrixData?.e) + Number(matrixData?.c1) + Number(matrixData?.c)}</td>
-                    <td>{Number(matrixData?.b) + Number(matrixData?.b2) + Number(matrixData?.b1) + Number(matrixData?.b3) + Number(matrixData?.e) + Number(matrixData?.d1) + Number(matrixData?.d)}</td>
-                    <td>{Number(matrixData?.l) + Number(matrixData?.l1) + Number(matrixData?.l2) + Number(matrixData?.l3) + Number(matrixData?.l4) + Number(matrixData?.l5) + Number(matrixData?.l6)}</td>
+                    <td>{fixTwentyTwo(Number(matrixData?.a) + Number(matrixData?.a2) + Number(matrixData?.a1) + Number(matrixData?.a3) + Number(matrixData?.e) + Number(matrixData?.c1) + Number(matrixData?.c))}</td>
+                    <td>{fixTwentyTwo(Number(matrixData?.b) + Number(matrixData?.b2) + Number(matrixData?.b1) + Number(matrixData?.b3) + Number(matrixData?.e) + Number(matrixData?.d1) + Number(matrixData?.d))}</td>
+                    <td>{fixTwentyTwo(Number(matrixData?.l) + Number(matrixData?.l1) + Number(matrixData?.l2) + Number(matrixData?.l3) + Number(matrixData?.l4) + Number(matrixData?.l5) + Number(matrixData?.l6))}</td>
                 </tr>
                 </tbody>
             </table>
