@@ -7,21 +7,14 @@ interface DecriptPeriodsI {
   periods?: number[]
 }
 
-const DecriptPeriods = ({classing = "", periods = [1, 2, 3]}: DecriptPeriodsI) => {
+const DecriptPeriods = ({classing = "", periods = [1]}: DecriptPeriodsI) => {
   const matrixData = useAppSelector(state => state.app.matrixData)
 
   const [periodsResult, setPeriodsResult] = useState<numbType[]>();
+
   useEffect(() => {
     // @ts-ignore
-    const result = [...new Set(Object.values(matrixData))]
-    // @ts-ignore
-    result.sort((a, b) => {
-      if  (a < b) return -1
-      else if (a > b) return 1
-      else return 0
-    })
-    // @ts-ignore
-    setPeriodsResult(result)
+    setPeriodsResult([matrixData.years])
   }, [matrixData])
 
   return (

@@ -20,7 +20,7 @@ const ResultItem = ({ item, periodNumb }: ResultItemI) => {
       className={`ResultItem ${isTabOpen ? "active" : ""}`}
     >
       <div className="ResultItemHeader">
-        <span>{"Период " + periodNumb }</span>
+        <span>{"Описание периода " + periodNumb }</span>
         <ArrowDown isActive={isTabOpen} clickHandler={editOpenHandler} />
       </div>
       <div
