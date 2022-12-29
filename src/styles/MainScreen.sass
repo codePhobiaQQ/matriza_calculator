@@ -188,7 +188,6 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
 @media screen and (max-width: 1024px)
   .container
     width: 90%
-
   .MainScreen
     .container
       max-width: 824px
@@ -212,7 +211,8 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
           margin-top: auto
           margin-bottom: Min(calc(#{$index} * 2.5), 50px)
           svg
-            width: Min(calc(#{$index} * 17), 340px)
+            width: Min(calc(#{$index} * 23), 460px)
+            max-width: 90%
 
       &.second
         width: 70%
@@ -236,7 +236,9 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
         .imageWrapper
           width: 100%
 
-
-
-
-
+@media screen and (max-width: 768px)
+  .MainScreen
+    .leftSide
+      text-align: center
+      button
+        margin: auto
