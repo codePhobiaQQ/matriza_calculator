@@ -1,12 +1,16 @@
 import React from 'react';
+import {useDispatch} from "react-redux"
 import LogoFooter from "../components/common/svg/LogoFooter";
+import { activeTabType, appSlice } from "./../redux/reducers/AppSlice"
 
 const Footer = () => {
-  // const linkHandler = (numb: number) => {
-  //   if (numb == 1) {
-  //
-  //   }
-  // }
+  const { changeActiveTab } = appSlice.actions
+  const dispatch = useDispatch()
+
+  const linkHandler = (numb: activeTabType) => {
+    dispatch(changeActiveTab(numb))
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
 
   return (
     <footer className={"footer"}>
@@ -15,9 +19,9 @@ const Footer = () => {
           <LogoFooter/>
           <ul className="navigation footerList">
             <span>Навигация:</span>
-            <li>Личная матрица</li>
-            <li>Матрица совместимости</li>
-            <li>Матрица здоровья</li>
+            <li onClick={() => linkHandler(1)}>Личная матрица</li>
+            <li onClick={() => linkHandler(2)}>Матрица совместимости</li>
+            <li onClick={() => linkHandler(3)}>Матрица здоровья</li>
           </ul>
 
           <ul className="navigation footerList">
