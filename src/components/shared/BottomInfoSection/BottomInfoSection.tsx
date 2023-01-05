@@ -39,7 +39,7 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
 
   return (
     <>
-      <div className={`${classing} BottomInfoSection`}>
+      {activeTab !== 3 && <div className={`${classing} BottomInfoSection`}>
         <div className="BottomInfoSection_left BottomInfoSection_side">
           <h3>{titleData[activeTab || 1].title1}</h3>
           <p>{titleData[activeTab || 1].description2}</p>
@@ -89,7 +89,7 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
             </div>
           </div>
         </div>
-      </div>
+      </div>}
     </>
   );
 };

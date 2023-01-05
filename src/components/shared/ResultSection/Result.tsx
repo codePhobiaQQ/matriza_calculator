@@ -16,6 +16,7 @@ interface ResultI {
 }
 
 const Result = ({activeTab}: ResultI) => {
+  const activeTab1 = useAppSelector(state => state.app.activeTab)
   const {showResult} = useAppSelector(
     (state) => state.app
   );
@@ -44,7 +45,7 @@ const Result = ({activeTab}: ResultI) => {
                   tabs[activeTab].id === 3 && <CalcTable/>
                 }
               </div>
-              <h3 className={`BottomInfoTitle ResultTitle m_t_20`}>Предназначение</h3>
+              {activeTab1 !== 3 && <h3 className={`BottomInfoTitle ResultTitle m_t_20`}>Предназначение</h3>}
               <BottomInfoSection/>
               <DecriptPeriods/>
               <ActionSection />
