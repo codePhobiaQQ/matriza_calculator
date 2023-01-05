@@ -33,62 +33,62 @@ const daysOption = [...Object.keys(new Array(31).fill("")).map(el => ({
 }))]
 const monthsOption = [
   {
-    label: "январь",
+    label: "Январь",
     // days: 31,
     value: 1,
   },
   {
-    label: "февраль",
+    label: "Февраль",
     // days: 29,
     value: 2,
   },
   {
-    label: "март",
+    label: "Март",
     // days: 31,
     value: 3,
   },
   {
-    label: "апрель",
+    label: "Апрель",
     // days: 30,
     value: 4,
   },
   {
-    label: "май",
+    label: "Май",
     // days: 31,
     value: 5,
   },
   {
-    label: "июнь",
+    label: "Июнь",
     // days: 30,
     value: 6,
   },
   {
-    label: "июль",
+    label: "Июль",
     // days: 31,
     value: 7,
   },
   {
-    label: "август",
+    label: "Август",
     // days: 31,
     value: 8,
   },
   {
-    label: "сентябрь",
+    label: "Сентябрь",
     // days: 30,
     value: 9,
   },
   {
-    label: "октябрь",
+    label: "Октябрь",
     // days: 31,
     value: 10,
   },
   {
-    label: "ноябрь",
+    label: "Ноябрь",
     // days: 30,
     value: 11,
   },
   {
-    label: "декабрь",
+    label: "Декабрь",
     // days: 31,
     value: 12,
   },
