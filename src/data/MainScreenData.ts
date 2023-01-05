@@ -4,9 +4,10 @@ import Health from "../components/common/svg/MainScreen/Health";
 import Hands from "../components/common/svg/MainPopup/Hands";
 import Pair1 from "../components/common/svg/MainPopup/Pair1";
 import Face from "../components/common/svg/MainPopup/Face";
+import {activeTabType} from "../redux/reducers/AppSlice";
 
 export interface TabItemI {
-  id: number;
+  id: activeTabType;
   mainScreenText: string;
   image: any;
   popupTitle: string;

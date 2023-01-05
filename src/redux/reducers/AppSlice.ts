@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { resultType } from "../../data/MainScreenData";
 import { matrixData } from "../../functions/onlineMatrixCalculation";
 
 export interface calculationDataMatrixSovI {
@@ -14,12 +13,15 @@ export interface calculationDataMatrixI {
   maleValue: string;
 }
 
+export type activeTabType = 1 | 2 | 3 | null
+
 interface AppState {
   isLoading: boolean;
   calculationInputData: calculationDataMatrixI;
   calculationInputDataSov: calculationDataMatrixSovI;
   showResult: boolean;
   matrixData: matrixData | null
+  activeTab: activeTabType
 }
 
 const initialState: AppState = {
@@ -38,7 +40,9 @@ const initialState: AppState = {
   } as calculationDataMatrixSovI,
 
   showResult: false,
-  matrixData: null
+  matrixData: null,
+
+  activeTab: null
 };
 
 export const appSlice = createSlice({
@@ -54,6 +58,9 @@ export const appSlice = createSlice({
     },
     changeMatrixData(state, action: PayloadAction<matrixData | null>) {
       state.matrixData = action.payload;
+    },
+    changeActiveTab(state, action: PayloadAction<activeTabType>) {
+      state.activeTab = action.payload;
     },
   },
 });

@@ -6,15 +6,43 @@ interface BottomInfoSectionI {
   classing?: string;
 }
 
+const titleData = {
+  1: {
+    title1: "Личное",
+    title2: "Социальное",
+    title3: "Духовное",
+    description1: "1",
+    description2: "2",
+    description3: "3"
+  },
+  2: {
+    title1: "Отношения",
+    title2: "Слияние",
+    title3: "Гармония",
+    description1: "Показывает, что партнёры должны проработать каждый для себя и чему должны научиться, чтобы быть вместе.",
+    description2: " Определяет, какую социальную роль выполняет пара, какую задачу выполняет и какую энергию отдает своему роду. ",
+    description3: "Это духовная составляющая пары, это то, на чем базируется пара (ресурс) и куда и к чему ей следует стремиться в своем развитии."
+  },
+  3: {
+    title1: "Поиск себя",
+    title2: "Социализация",
+    title3: "Духовная грамотность",
+    description1: "1",
+    description2: "2",
+    description3: "3"
+  },
+}
+
 const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
   const matrixData = useAppSelector(state => state.app.matrixData)
+  const activeTab = useAppSelector(state => state.app.activeTab)
 
   return (
     <>
       <div className={`${classing} BottomInfoSection`}>
         <div className="BottomInfoSection_left BottomInfoSection_side">
-          <h3>Личное</h3>
-          <p>Показывает, что партнёры должны проработать каждый для себя и чему должны научиться, чтобы быть вместе.</p>
+          <h3>{titleData[activeTab || 1].title1}</h3>
+          <p>{titleData[activeTab || 1].description2}</p>
           <div className="BottomInfoSection_resultLines">
             <div className="BottomInfoSection_resultLine">
               <span className={"BottomInfoSection_resultLine_title"}>Небо</span>
@@ -32,10 +60,8 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
           </div>
         </div>
         <div className="BottomInfoSection_center BottomInfoSection_side">
-          <h3>Социальное</h3>
-          <p>Определяет, какую социальную роль выполняет пара, какую задачу выполняет и какую энергию отдает своему
-            роду.
-          </p>
+          <h3>{titleData[activeTab || 1].title2}</h3>
+          <p>{titleData[activeTab || 1].description2}</p>
           <div className="BottomInfoSection_resultLines">
             <div className="BottomInfoSection_resultLine">
               <span className={"BottomInfoSection_resultLine_title"}>M</span>
@@ -53,9 +79,8 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
           </div>
         </div>
         <div className="BottomInfoSection_right BottomInfoSection_side">
-          <h3>Духовное</h3>
-          <p>Это духовная составляющая пары, это то, на чем базируется пара (ресурс) и куда и к чему ей следует
-            стремиться в своем развитии.
+          <h3>{titleData[activeTab || 1].title3}</h3>
+          <p>{titleData[activeTab || 1].description3}
           </p>
           <div className="BottomInfoSection_resultLines">
             <div className="BottomInfoSection_resultLine">

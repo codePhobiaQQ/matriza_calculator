@@ -9,6 +9,7 @@ import Description1 from "./components/descriptions/Description1";
 import Description2 from "./components/descriptions/Description2";
 import Description3 from "./components/descriptions/Description3";
 import DecriptPeriods from "../DecriptPeriods/DecriptPeriods";
+import ActionSection from "../ActionSection/ActionSection";
 
 interface ResultI {
   activeTab: string;
@@ -45,7 +46,8 @@ const Result = ({activeTab}: ResultI) => {
               </div>
               <h3 className={`BottomInfoTitle ResultTitle m_t_20`}>Предназначение</h3>
               <BottomInfoSection/>
-              {tabs[activeTab].id === 1 && <DecriptPeriods/>}
+              <DecriptPeriods/>
+              <ActionSection />
             </div>
           </div>
         </>)}

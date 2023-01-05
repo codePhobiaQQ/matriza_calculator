@@ -5,10 +5,12 @@ import dataText from "./data";
 interface ResultItemI {
   item: string[];
   periodNumb: number;
+  isFinance?: boolean;
+  titleText?: string;
   // activeTab: string;
 }
 
-const ResultItem = ({ item, periodNumb }: ResultItemI) => {
+const ResultItem = ({ item, periodNumb, isFinance, titleText }: ResultItemI) => {
   const [isTabOpen, setIsTabOpen] = useState<boolean>(false);
   const editOpenHandler = () => {
     setIsTabOpen((prevState) => !prevState);
@@ -20,7 +22,8 @@ const ResultItem = ({ item, periodNumb }: ResultItemI) => {
       className={`ResultItem ${isTabOpen ? "active" : ""}`}
     >
       <div className="ResultItemHeader">
-        <span>{"Описание периода " + periodNumb }</span>
+        {/*<span>{`${isFinance ? "Финансовая карма" : `Рекомендации на ближайший период жизни ${periodNumb}`}`}</span>*/}
+        <span>{titleText}</span>
         <ArrowDown isActive={isTabOpen} clickHandler={editOpenHandler} />
       </div>
       <div

@@ -8,13 +8,15 @@ export type numbType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 1
 
 interface ResultItemListI {
   periods?: numbType[]
+  isFinance?: boolean;
+  titleText?: string;
 }
 
-const ResultItemList = ({ periods = [] }: ResultItemListI) => {
+const ResultItemList = ({ periods = [], isFinance = false, titleText = "" }: ResultItemListI) => {
   return (
     <div className={"ResultItemsList"}>
       {periods.map((period, index) => (
-        <ResultItem periodNumb={period} key={period + "helloList1" + index + "helloList"} item={decryptPeriods[period]} />
+        <ResultItem titleText={titleText} isFinance={isFinance} periodNumb={period} key={period + "helloList1" + index + "helloList"} item={decryptPeriods[period]} />
       ))}
     </div>
   );

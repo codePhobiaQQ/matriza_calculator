@@ -6,7 +6,7 @@ interface ActionSectionI {
 
 const ActionSection = ({classing = ""}: ActionSectionI) => {
   return (
-    <div className={`${classing}`}>
+    <div className={`ActionSection ${classing}`}>
       <h3>Для получения подробного описания Вашей матрицы судьбы обратитесь к эксперту Школы BRESSEL </h3>
       <button>Запись на консультацию</button>
     </div>
