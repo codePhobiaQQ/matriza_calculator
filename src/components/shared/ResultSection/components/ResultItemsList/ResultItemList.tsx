@@ -1,4 +1,5 @@
 import React from "react";
+import decryptFinance from "../../../../../data/decryptFinance";
 import decryptPeriods from "../../../../../data/decryptPeriods";
 import { TabItemI } from "../../../../../data/MainScreenData";
 import dataText, { dataTextI } from "./data";
@@ -16,7 +17,7 @@ const ResultItemList = ({ periods = [], isFinance = false, titleText = "" }: Res
   return (
     <div className={"ResultItemsList"}>
       {periods.map((period, index) => (
-        <ResultItem titleText={titleText} isFinance={isFinance} periodNumb={period} key={period + "helloList1" + index + "helloList"} item={decryptPeriods[period]} />
+        <ResultItem titleText={titleText} isFinance={isFinance} periodNumb={period} key={period + "helloList1" + index + "helloList"} item={decryptFinance[period]} />
       ))}
     </div>
   );
