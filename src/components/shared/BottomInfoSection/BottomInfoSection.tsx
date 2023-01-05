@@ -14,7 +14,7 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
       <div className={`${classing} BottomInfoSection`}>
         <div className="BottomInfoSection_left BottomInfoSection_side">
           <h3>Личное</h3>
-          <p>Соединение мужского и женского. Выстраивание взаимоотношений. Способности, навыки, умения.</p>
+          <p>Показывает, что партнёры должны проработать каждый для себя и чему должны научиться, чтобы быть вместе.</p>
           <div className="BottomInfoSection_resultLines">
             <div className="BottomInfoSection_resultLine">
               <span className={"BottomInfoSection_resultLine_title"}>Небо</span>
@@ -33,8 +33,8 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
         </div>
         <div className="BottomInfoSection_center BottomInfoSection_side">
           <h3>Социальное</h3>
-          <p>Социальная и родовая системы.
-            Результаты и признания в социуме.
+          <p>Определяет, какую социальную роль выполняет пара, какую задачу выполняет и какую энергию отдает своему
+            роду.
           </p>
           <div className="BottomInfoSection_resultLines">
             <div className="BottomInfoSection_resultLine">
@@ -54,8 +54,8 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
         </div>
         <div className="BottomInfoSection_right BottomInfoSection_side">
           <h3>Духовное</h3>
-          <p>Духовный зачет. Кто я для бога?
-            Где божественное во мне?
+          <p>Это духовная составляющая пары, это то, на чем базируется пара (ресурс) и куда и к чему ей следует
+            стремиться в своем развитии.
           </p>
           <div className="BottomInfoSection_resultLines">
             <div className="BottomInfoSection_resultLine">

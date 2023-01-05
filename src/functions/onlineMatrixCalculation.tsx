@@ -293,226 +293,227 @@ const onlineMatrixCalculation = (date: string): matrixData => {
 
   switch (true) {
     // ---- 0 ----
-    case (fullAge.years < 1 || fullAge.years >= 79):
+    // case (fullAge.years < 1 || fullAge.years >= 79):
+    case (fullAge.years < 1 || (fullAge.years === 1 && fullAge.months < 3)):
       years = age0;
       break;
-    case (fullAge.years < 2 || fullAge.years == 2 && fullAge.months < 6):
+    case (fullAge.years < 2 || (fullAge.years === 2 && fullAge.months < 6)):
       years = age5_1;
       break;
-    case (fullAge.years < 3 || fullAge.years == 3 && fullAge.months < 6):
+    case (fullAge.years < 3 || (fullAge.years == 3 && fullAge.months < 9)):
       years = age5_2;
       break;
-    case (fullAge.years < 4):
+    case (fullAge.years < 5):
       years = age5_3;
       break;
 
     // ---- 5 ----
-    case (fullAge.years < 6):
+    case (fullAge.years < 6 || (fullAge.years === 6 && fullAge.months < 3)):
       years = age5;
       break;
-    case (fullAge.years < 7 || fullAge.years == 7 && fullAge.months < 6):
+    case (fullAge.years < 7 || fullAge.years === 7 && fullAge.months < 6):
       years = age10_1;
       break;
-    case (fullAge.years < 8 || fullAge.years == 8 && fullAge.months < 6):
+    case (fullAge.years < 8 || fullAge.years == 8 && fullAge.months < 9):
       years = age10_2;
       break;
-    case (fullAge.years < 9):
+    case (fullAge.years < 10):
       years = age10_3;
       break;
 
     // ---- 10 ----
-    case (fullAge.years < 11):
+    case (fullAge.years < 11 || (fullAge.years === 11 && fullAge.months < 3)):
       years = age10;
       break;
     case (fullAge.years < 12 || fullAge.years == 12 && fullAge.months < 6):
       years = age15_1;
       break;
-    case (fullAge.years < 13 || fullAge.years == 13 && fullAge.months < 6):
+    case (fullAge.years < 13 || fullAge.years == 13 && fullAge.months < 9):
       years = age15_2;
       break;
-    case (fullAge.years < 14):
+    case (fullAge.years < 15):
       years = age15_3;
       break;
 
     // ---- 15 ----
-    case (fullAge.years < 16):
+    case (fullAge.years < 16 || (fullAge.years === 16 && fullAge.months < 3)):
       years = age15;
       break;
     case (fullAge.years < 17 || fullAge.years == 17 && fullAge.months < 6):
       years = age20_1;
       break;
-    case (fullAge.years < 18 || fullAge.years == 18 && fullAge.months < 6):
+    case (fullAge.years < 18 || fullAge.years == 18 && fullAge.months < 9):
       years = age20_2;
       break;
-    case (fullAge.years < 19):
+    case (fullAge.years < 20):
       years = age20_3;
       break;
 
     // ---- 20 ----
-    case (fullAge.years < 21):
+    case (fullAge.years < 21 || (fullAge.years === 21 && fullAge.months < 3)):
       years = age20;
       break;
     case (fullAge.years < 22 || fullAge.years == 22 && fullAge.months < 6):
       years = age25_1;
       break;
-    case (fullAge.years < 23 || fullAge.years == 23 && fullAge.months < 6):
+    case (fullAge.years < 23 || fullAge.years == 23 && fullAge.months < 9):
       years = age25_2;
       break;
-    case (fullAge.years < 24):
+    case (fullAge.years < 25):
       years = age25_3;
       break;
 
     // ---- 25 ----
-    case (fullAge.years < 26):
+    case (fullAge.years < 26 || (fullAge.years === 26 && fullAge.months < 3)):
       years = age25;
       break;
     case (fullAge.years < 27 || fullAge.years == 27 && fullAge.months < 6):
       years = age30_1;
       break;
-    case (fullAge.years < 28 || fullAge.years == 28 && fullAge.months < 6):
+    case (fullAge.years < 28 || fullAge.years == 28 && fullAge.months < 9):
       years = age30_2;
       break;
-    case (fullAge.years < 29):
+    case (fullAge.years < 30):
       years = age30_3;
       break;
 
     // ---- 30 ----
-    case (fullAge.years < 31):
+    case (fullAge.years < 30 || (fullAge.years === 30 && fullAge.months < 3)):
       years = age30;
       break;
     case (fullAge.years < 32 || fullAge.years == 32 && fullAge.months < 6):
       years = age35_1;
       break;
-    case (fullAge.years < 33 || fullAge.years == 33 && fullAge.months < 6):
+    case (fullAge.years < 33 || fullAge.years == 33 && fullAge.months < 9):
       years = age35_2;
       break;
-    case (fullAge.years < 34):
+    case (fullAge.years < 35):
       years = age35_3;
       break;
 
     // ---- 35 ----
-    case (fullAge.years < 36):
+    case (fullAge.years < 36 || (fullAge.years === 36 && fullAge.months < 3)):
       years = age35;
       break;
     case (fullAge.years < 37 || fullAge.years == 37 && fullAge.months < 6):
       years = age40_1;
       break;
-    case (fullAge.years < 38 || fullAge.years == 38 && fullAge.months < 6):
+    case (fullAge.years < 38 || fullAge.years == 38 && fullAge.months < 9):
       years = age40_2;
       break;
-    case (fullAge.years < 39):
+    case (fullAge.years < 40):
       years = age40_3;
       break;
 
     // ---- 40 ----
-    case (fullAge.years < 41):
+    case (fullAge.years < 41 || (fullAge.years === 41 && fullAge.months < 3)):
       years = age40;
       break;
     case (fullAge.years < 42 || fullAge.years == 42 && fullAge.months < 6):
       years = age45_1;
       break;
-    case (fullAge.years < 43 || fullAge.years == 43 && fullAge.months < 6):
+    case (fullAge.years < 43 || fullAge.years == 43 && fullAge.months < 9):
       years = age45_2;
       break;
-    case (fullAge.years < 44):
+    case (fullAge.years < 45):
       years = age45_3;
       break;
 
     // ---- 45 ----
-    case (fullAge.years < 46):
+    case (fullAge.years < 46 || (fullAge.years === 46 && fullAge.months < 3)):
       years = age45;
       break;
     case (fullAge.years < 47 || fullAge.years == 47 && fullAge.months < 6):
       years = age50_1;
       break;
-    case (fullAge.years < 48 || fullAge.years == 48 && fullAge.months < 6):
+    case (fullAge.years < 48 || fullAge.years == 48 && fullAge.months < 9):
       years = age50_2;
       break;
-    case (fullAge.years < 49):
+    case (fullAge.years < 50):
       years = age50_3;
       break;
 
     // ---- 50 ----
-    case (fullAge.years < 51):
+    case (fullAge.years < 51 || (fullAge.years === 51 && fullAge.months < 3)):
       years = age50;
       break;
     case (fullAge.years < 52 || fullAge.years == 52 && fullAge.months < 6):
       years = age55_1;
       break;
-    case (fullAge.years < 53 || fullAge.years == 53 && fullAge.months < 6):
+    case (fullAge.years < 53 || fullAge.years == 53 && fullAge.months < 9):
       years = age55_2;
       break;
-    case (fullAge.years < 54):
+    case (fullAge.years < 55):
       years = age55_3;
       break;
 
     // ---- 55 ----
-    case (fullAge.years < 56):
+    case (fullAge.years < 56 || (fullAge.years === 56 && fullAge.months < 3)):
       years = age55;
       break;
     case (fullAge.years < 57 || fullAge.years == 57 && fullAge.months < 6):
       years = age60_1;
       break;
-    case (fullAge.years < 58 || fullAge.years == 58 && fullAge.months < 6):
+    case (fullAge.years < 58 || fullAge.years == 58 && fullAge.months < 9):
       years = age60_2;
       break;
-    case (fullAge.years < 59):
+    case (fullAge.years < 60):
       years = age60_3;
       break;
 
     // ---- 60 ----
-    case (fullAge.years < 61):
+    case (fullAge.years < 61 || (fullAge.years === 61 && fullAge.months < 3)):
       years = age60;
       break;
     case (fullAge.years < 62 || fullAge.years == 62 && fullAge.months < 6):
       years = age65_1;
       break;
-    case (fullAge.years < 63 || fullAge.years == 63 && fullAge.months < 6):
+    case (fullAge.years < 63 || fullAge.years == 63 && fullAge.months < 9):
       years = age65_2;
       break;
-    case (fullAge.years < 64):
+    case (fullAge.years < 65):
       years = age65_3;
       break;
 
     // ---- 65 ----
-    case (fullAge.years < 66):
+    case (fullAge.years < 66 || (fullAge.years === 66 && fullAge.months < 3)):
       years = age65;
       break;
     case (fullAge.years < 67 || fullAge.years == 67 && fullAge.months < 6):
       years = age70_1;
       break;
-    case (fullAge.years < 68 || fullAge.years == 68 && fullAge.months < 6):
+    case (fullAge.years < 68 || fullAge.years == 68 && fullAge.months < 9):
       years = age70_2;
       break;
-    case (fullAge.years < 69):
+    case (fullAge.years < 70):
       years = age70_3;
       break;
 
     // ---- 70 ----
-    case (fullAge.years < 71):
+    case (fullAge.years < 71 || (fullAge.years === 71 && fullAge.months < 3)):
       years = age70;
       break;
     case (fullAge.years < 72 || fullAge.years == 72 && fullAge.months < 6):
       years = age75_1;
       break;
-    case (fullAge.years < 73 || fullAge.years == 73 && fullAge.months < 6):
+    case (fullAge.years < 73 || fullAge.years == 73 && fullAge.months < 9):
       years = age75_2;
       break;
-    case (fullAge.years < 74):
+    case (fullAge.years < 75):
       years = age75_3;
       break;
 
     // ---- 75 ----
-    case (fullAge.years < 76):
+    case (fullAge.years < 76 || (fullAge.years === 76 && fullAge.months < 3)):
       years = age75;
       break;
     case (fullAge.years < 77 || fullAge.years == 77 && fullAge.months < 6):
       years = age80_1;
       break;
-    case (fullAge.years < 78 || fullAge.years == 78 && fullAge.months < 6):
+    case (fullAge.years < 78 || fullAge.years == 78 && fullAge.months < 9):
       years = age80_2;
       break;
-    case (fullAge.years < 79):
+    case (fullAge.years < 80):
       years = age80_3;
       break;
   }
