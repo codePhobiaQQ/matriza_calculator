@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useAppSelector} from "../../../hooks/redux";
-import ResultItemList, { numbType } from "../ResultSection/components/ResultItemsList/ResultItemList";
+import ResultItemList, {numbType} from "../ResultSection/components/ResultItemsList/ResultItemList";
 
 interface DecriptPeriodsI {
   classing?: string;
@@ -19,7 +19,7 @@ const DecriptPeriods = ({classing = "", periods = [1]}: DecriptPeriodsI) => {
 
   return (
     <div className={`${classing} DecryptPeriods`}>
-      <ResultItemList periods={periodsResult} />
+      <ResultItemList periods={periodsResult}/>
     </div>
   );
 };

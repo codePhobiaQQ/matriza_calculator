@@ -9,8 +9,8 @@ const Footer = () => {
                     <LogoFooter />
                     <ul className="navigation footerList">
                         <span>Навигация:</span>
-                        <li>Матрица онлайн</li>
-                        <li>Совместимость</li>
+                        <li>Личная матрица</li>
+                        <li>Матрица совместимости</li>
                         <li>Матрица здоровья</li>
                     </ul>
 
