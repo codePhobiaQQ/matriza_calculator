@@ -1,4 +1,4 @@
-import React, {useCallback, useRef, useState} from "react";
+import React, { useRef, useState} from "react";
 import tabs from "../../../data/MainScreenData";
 import Close from "../../common/svg/Close";
 import Select from "react-select";
@@ -12,16 +12,6 @@ interface MainScreenModalI {
   handleClose: () => void;
   type: string;
 }
-
-// const isPersonOptions = [
-//   {value: "personal", label: "Личное"},
-//   {value: "notpersonal", label: "Не личное"},
-// ];
-//
-// const maleOptions = [
-//   {value: "man", label: "Мужской"},
-//   {value: "woman", label: "Женский"},
-// ];
 
 const yearsOption = [...Object.keys(new Array(100).fill("")).map(el => ({
   value: Number(el) + 1950,
