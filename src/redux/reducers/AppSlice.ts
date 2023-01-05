@@ -13,7 +13,7 @@ export interface calculationDataMatrixI {
   maleValue: string;
 }
 
-export type activeTabType = 1 | 2 | 3 | null
+export type activeTabType = 1 | 2 | 3;
 
 interface AppState {
   isLoading: boolean;
@@ -42,7 +42,7 @@ const initialState: AppState = {
   showResult: false,
   matrixData: null,
 
-  activeTab: null
+  activeTab: 1,
 };
 
 export const appSlice = createSlice({
