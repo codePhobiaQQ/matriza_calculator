@@ -1,9 +1,9 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, {useCallback, useRef, useState} from "react";
 import tabs from "../../../data/MainScreenData";
 import Close from "../../common/svg/Close";
 import Select from "react-select";
-import { appSlice } from "./../../../redux/reducers/AppSlice";
-import { useDispatch } from "react-redux";
+import {appSlice} from "./../../../redux/reducers/AppSlice";
+import {useDispatch} from "react-redux";
 import onlineMatrixCalculation from "../../../functions/onlineMatrixCalculation";
 import sovmestMatrixCalculation from "../../../functions/sovmestMatrixCalculation";
 
@@ -13,14 +13,85 @@ interface MainScreenModalI {
   type: string;
 }
 
-const isPersonOptions = [
-  { value: "personal", label: "Личное" },
-  { value: "notpersonal", label: "Не личное" },
-];
+// const isPersonOptions = [
+//   {value: "personal", label: "Личное"},
+//   {value: "notpersonal", label: "Не личное"},
+// ];
+//
+// const maleOptions = [
+//   {value: "man", label: "Мужской"},
+//   {value: "woman", label: "Женский"},
+// ];
 
-const maleOptions = [
-  { value: "man", label: "Мужской" },
-  { value: "woman", label: "Женский" },
+const yearsOption = [...Object.keys(new Array(100).fill("")).map(el => ({
+  value: Number(el) + 1950,
+  label: (Number(el) + 1950).toString()
+}))]
+const daysOption = [...Object.keys(new Array(31).fill("")).map(el => ({
+  value: Number(el) + 1,
+  label: (Number(el) + 1).toString()
+}))]
+const monthsOption = [
+  {
+    label: "январь",
+    // days: 31,
+    value: 1,
+  },
+  {
+    label: "февраль",
+    // days: 29,
+    value: 2,
+  },
+  {
+    label: "март",
+    // days: 31,
+    value: 3,
+  },
+  {
+    label: "апрель",
+    // days: 30,
+    value: 4,
+  },
+  {
+    label: "май",
+    // days: 31,
+    value: 5,
+  },
+  {
+    label: "июнь",
+    // days: 30,
+    value: 6,
+  },
+  {
+    label: "июль",
+    // days: 31,
+    value: 7,
+  },
+  {
+    label: "август",
+    // days: 31,
+    value: 8,
+  },
+  {
+    label: "сентябрь",
+    // days: 30,
+    value: 9,
+  },
+  {
+    label: "октябрь",
+    // days: 31,
+    value: 10,
+  },
+  {
+    label: "ноябрь",
+    // days: 30,
+    value: 11,
+  },
+  {
+    label: "декабрь",
+    // days: 31,
+    value: 12,
+  },
 ];
 
 interface selectValueI {
@@ -30,27 +101,34 @@ interface selectValueI {
   };
 }
 
-const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
+const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
   const dispatch = useDispatch();
-  const { chageCalculationData, changeMatrixData, changeShowResult } = appSlice.actions;
+  const {chageCalculationData, changeMatrixData, changeShowResult} = appSlice.actions;
 
-  const [name, setName] = useState<string>("");
+  // const [name, setName] = useState<string>("");
   const [alertText, setAlertText] = useState<string>("");
 
-  const editName = useCallback((e: any) => {
-    setName(e.target.value);
-  }, []);
-  const [date, setDate] = useState<string>("");
-  const editDate = useCallback((e: any) => {
-    setDate(e.target.value);
-  }, []);
-  const [date1, setDate1] = useState<string>("");
-  const editDate1 = useCallback((e: any) => {
-    setDate1(e.target.value);
-  }, []);
+  // const editName = useCallback((e: any) => {
+  //   setName(e.target.value);
+  // }, []);
+  // const [date, setDate] = useState<string>("");
+  // const editDate = useCallback((e: any) => {
+  //   setDate(e.target.value);
+  // }, []);
+  // const [date1, setDate1] = useState<string>("");
+  // const editDate1 = useCallback((e: any) => {
+  //   setDate1(e.target.value);
+  // }, []);
 
-  const personalRef = useRef(null);
-  const maleRef = useRef(null);
+  // const personalRef = useRef(null);
+  // const maleRef = useRef(null);
+
+  const year1Ref = useRef(null);
+  const year2Ref = useRef(null);
+  const month1Ref = useRef(null);
+  const month2Ref = useRef(null);
+  const day1Ref = useRef(null);
+  const day2Ref = useRef(null);
 
   const errorHandler = () => {
     setAlertText("Введите все данные!");
@@ -59,12 +137,18 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
     }, 1500);
   };
   const nullData = () => {
-    setName("");
-    setDate("");
     // @ts-ignore
-    maleRef.current?.clearValue();
+    year1Ref.current?.clearValue();
     // @ts-ignore
-    personalRef.current?.clearValue();
+    year2Ref.current?.clearValue();
+    // @ts-ignore
+    month1Ref.current?.clearValue();
+    // @ts-ignore
+    month2Ref.current?.clearValue();
+    // @ts-ignore
+    day1Ref.current?.clearValue();
+    // @ts-ignore
+    day2Ref.current?.clearValue();
   };
 
   const calcFunction = () => {
@@ -72,24 +156,32 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
 
     // First Type
     if (tabs[type].id == 1) {
+      let yearValue;
       // @ts-ignore
-      if (personalRef.current.props.value) {
+      if (year1Ref.current.props.value) {
         // @ts-ignore
-        personalValue = personalRef.current.props.value.value;
+        yearValue = year1Ref.current.props.value.value;
       }
-      let maleValue;
+      let monthValue;
       // @ts-ignore
-      if (maleRef.current.props.value) {
+      if (month1Ref.current.props.value) {
         // @ts-ignore
-        maleValue = maleRef.current.props.value.value;
+        monthValue = month1Ref.current.props.value.value;
       }
-      if (!(name && date && personalValue && maleValue)) {
+      let dayValue;
+      // @ts-ignore
+      if (day1Ref.current.props.value) {
+        // @ts-ignore
+        dayValue = day1Ref.current.props.value.value;
+      }
+
+      if (!(yearValue && monthValue && dayValue)) {
         errorHandler();
       } else {
         dispatch(
-          chageCalculationData({ name, date, personalValue, maleValue })
+          chageCalculationData({ date: `${yearValue}-${monthValue}-${dayValue}` })
         );
-        dispatch(changeMatrixData(onlineMatrixCalculation(date)))
+        dispatch(changeMatrixData(onlineMatrixCalculation(`${yearValue}-${monthValue}-${dayValue}`)))
         dispatch(changeShowResult(true))
         handleClose();
         nullData();
@@ -99,10 +191,48 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
 
     // Second Type
     else if (tabs[type].id == 2) {
-      if (!(date1 && date)) {
+
+      let yearValue_1;
+      // @ts-ignore
+      if (year1Ref.current.props.value) {
+        // @ts-ignore
+        yearValue_1 = year1Ref.current.props.value.value;
+      }
+      let monthValue_1;
+      // @ts-ignore
+      if (month1Ref.current.props.value) {
+        // @ts-ignore
+        monthValue_1 = month1Ref.current.props.value.value;
+      }
+      let dayValue_1;
+      // @ts-ignore
+      if (day1Ref.current.props.value) {
+        // @ts-ignore
+        dayValue_1 = day1Ref.current.props.value.value;
+      }
+      let yearValue_2;
+      // @ts-ignore
+      if (year1Ref.current.props.value) {
+        // @ts-ignore
+        yearValue_2 = year2Ref.current.props.value.value;
+      }
+      let monthValue_2;
+      // @ts-ignore
+      if (month1Ref.current.props.value) {
+        // @ts-ignore
+        monthValue_2 = month2Ref.current.props.value.value;
+      }
+      let dayValue_2;
+      // @ts-ignore
+      if (day1Ref.current.props.value) {
+        // @ts-ignore
+        dayValue_2 = day2Ref.current.props.value.value;
+      }
+
+      if (!(yearValue_1 && yearValue_2 && monthValue_1 && monthValue_2 && dayValue_1 && dayValue_2)) {
         errorHandler();
       } else {
-        dispatch(changeMatrixData(sovmestMatrixCalculation(date, date1)))
+        dispatch(changeMatrixData(sovmestMatrixCalculation(`${yearValue_1}-${monthValue_1}-${dayValue_1}`, `${yearValue_2}-${monthValue_2}-${dayValue_2}`)))
         dispatch(changeShowResult(true))
         handleClose();
         nullData();
@@ -110,24 +240,32 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
     }
     // Third Type
     else {
+      let yearValue;
       // @ts-ignore
-      if (personalRef.current.props.value) {
+      if (year1Ref.current.props.value) {
         // @ts-ignore
-        personalValue = personalRef.current.props.value.value;
+        yearValue = year1Ref.current.props.value.value;
       }
-      let maleValue;
+      let monthValue;
       // @ts-ignore
-      if (maleRef.current.props.value) {
+      if (month1Ref.current.props.value) {
         // @ts-ignore
-        maleValue = maleRef.current.props.value.value;
+        monthValue = month1Ref.current.props.value.value;
       }
-      if (!(name && date && personalValue && maleValue)) {
+      let dayValue;
+      // @ts-ignore
+      if (day1Ref.current.props.value) {
+        // @ts-ignore
+        dayValue = day1Ref.current.props.value.value;
+      }
+
+      if (!(yearValue && monthValue && dayValue)) {
         errorHandler();
       } else {
         dispatch(
-          chageCalculationData({ name, date, personalValue, maleValue })
+          chageCalculationData({ date: `${yearValue}-${monthValue}-${dayValue}` })
         );
-        dispatch(changeMatrixData(onlineMatrixCalculation(date)))
+        dispatch(changeMatrixData(onlineMatrixCalculation(`${yearValue}-${monthValue}-${dayValue}`)))
         dispatch(changeShowResult(true))
         handleClose();
         nullData();
@@ -138,24 +276,17 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
   return (
     <div className={`CalculationModal ${show ? "active" : ""}`}>
       <div className="CalculationModalInner">
-        <Close clickHandler={handleClose} />
+        <Close clickHandler={handleClose}/>
         <h2>{tabs[type].popupTitle}</h2>
         {/*<p>{tabs[type].popupText}</p>*/}
         <div className="formWrapper">
           <div className="form">
             {(tabs[type].id == 1 || tabs[type].id == 3) && (
               <>
-                <input
-                  value={name}
-                  onChange={editName}
-                  placeholder={"Имя*"}
-                  type="text"
-                />
-                <input value={date} onChange={editDate} type="date" />
                 <div className="selectWrapper">
                   <Select
-                    ref={personalRef}
-                    placeholder={"Личное*"}
+                    ref={year1Ref}
+                    placeholder={"Год"}
                     classNames={{
                       container: (state) => "selectContainer",
                       valueContainer: (state) => "selectValueContainer",
@@ -163,18 +294,35 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
                       control: (state) =>
                         state.isFocused ? "selectData" : "selectData",
                     }}
-                    options={isPersonOptions}
+                    options={yearsOption}
                   />
                 </div>
                 <div className="selectWrapper">
                   <Select
-                    ref={maleRef}
-                    placeholder={"Пол*"}
+                    ref={month1Ref}
+                    placeholder={"Месяц"}
                     classNames={{
                       container: (state) => "selectContainer",
-                      control: (state) => "selectData",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
                     }}
-                    options={maleOptions}
+                    options={monthsOption}
+                  />
+                </div>
+                <div className="selectWrapper">
+                  <Select
+                    ref={day1Ref}
+                    placeholder={"День"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={daysOption}
                   />
                 </div>
               </>
@@ -182,19 +330,91 @@ const MainScreenModal = ({ show, handleClose, type }: MainScreenModalI) => {
             {tabs[type].id == 2 && (
               <>
                 <span>Партнер 1</span>
-                <input
-                  placeholder={"Дата рождения*"}
-                  value={date}
-                  onChange={editDate}
-                  type="date"
-                />
+                <div className="selectWrapper">
+                  <Select
+                    ref={year1Ref}
+                    placeholder={"Год"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={yearsOption}
+                  />
+                </div>
+                <div className="selectWrapper">
+                  <Select
+                    ref={month1Ref}
+                    placeholder={"Месяц"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={monthsOption}
+                  />
+                </div>
+                <div className="selectWrapper">
+                  <Select
+                    ref={day1Ref}
+                    placeholder={"День"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={daysOption}
+                  />
+                </div>
                 <span className={"SecondPartner"}>Партнер 2</span>
-                <input
-                  placeholder={"Дата рождения*"}
-                  value={date1}
-                  onChange={editDate1}
-                  type="date"
-                />
+                <div className="selectWrapper">
+                  <Select
+                    ref={year2Ref}
+                    placeholder={"Год"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={yearsOption}
+                  />
+                </div>
+                <div className="selectWrapper">
+                  <Select
+                    ref={month2Ref}
+                    placeholder={"Месяц"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={monthsOption}
+                  />
+                </div>
+                <div className="selectWrapper">
+                  <Select
+                    ref={day2Ref}
+                    placeholder={"День"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={daysOption}
+                  />
+                </div>
               </>
             )}
             <button onClick={calcFunction}>Рассчитать</button>

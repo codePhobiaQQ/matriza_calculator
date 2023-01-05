@@ -7,10 +7,7 @@ export interface calculationDataMatrixSovI {
 }
 
 export interface calculationDataMatrixI {
-  name: string;
   date: string;
-  personalValue: string;
-  maleValue: string;
 }
 
 export type activeTabType = 1 | 2 | 3;
@@ -28,10 +25,7 @@ const initialState: AppState = {
   isLoading: false,
 
   calculationInputData: {
-    name: "test",
     date: "2020-02-43",
-    personalValue: "personal",
-    maleValue: "male",
   } as calculationDataMatrixI,
 
   calculationInputDataSov: {
