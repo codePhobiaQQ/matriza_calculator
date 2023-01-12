@@ -130,9 +130,11 @@ export interface matrixData {
 }
 
 const onlineMatrixCalculation = (date: string): matrixData => {
-  const a = fixTwentyTwo(sumOfDecimals(date.split("-")[2]))
-  const b = fixTwentyTwo(sumOfDecimals(date.split("-")[1]))
-  const c = fixTwentyTwo(sumOfDecimals(date.split("-")[0]))
+  console.log("date", date)
+
+  const a = fixTwentyTwo(date.split("-")[2])
+  const b = fixTwentyTwo(date.split("-")[1])
+  const c = fixTwentyTwo(fixTwentyTwo(date.split("-")[0]))
 
   const d = fixTwentyTwo(a + b + c)
   const e = fixTwentyTwo(a + b + c + d)
@@ -276,8 +278,22 @@ const onlineMatrixCalculation = (date: string): matrixData => {
     _resultAge["0_0"] = tmp0_0;
     const tmp5_0 = age5
     _resultAge["5_0"] = tmp5_0;
+
+    // 👍
     const tmp2_6 = fixTwentyTwo(tmp0_0 + tmp5_0)
     _resultAge["2_6"] = tmp2_6
+
+    // 👍
+    const tmp1_3 = fixTwentyTwo(tmp0_0 + tmp2_6)
+    _resultAge["2_3"] = tmp1_3
+
+
+    const tmp2_1 = fixTwentyTwo(tmp0_0 + tmp2_6)
+    _resultAge["2_1"] = tmp2_1
+
+    // const tmp2_2 = fixTwentyTwo(tmp0_0 + tmp2_3)
+    // _resultAge["2_1"] = tmp2_1
+
   };
   _resultHandler()
 
