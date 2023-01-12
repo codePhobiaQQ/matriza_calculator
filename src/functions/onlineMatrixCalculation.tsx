@@ -266,6 +266,1149 @@ const onlineMatrixCalculation = (date: string): matrixData => {
   const age80_1 = fixTwentyTwo(age75 + age80_2)
   const age80_3 = fixTwentyTwo(age80_2 + age0)
 
+  // -------- MoreDots -------
+
+
+
+  let _resultAge: any = {}
+  const _resultHandler = () => {
+    const tmp0_0 = age0
+    _resultAge["0_0"] = tmp0_0;
+    const tmp5_0 = age5
+    _resultAge["5_0"] = tmp5_0;
+    const tmp2_6 = fixTwentyTwo(tmp0_0 + tmp5_0)
+    _resultAge["2_6"] = tmp2_6
+  };
+  _resultHandler()
+
+
+
+
+  const resultAge = {
+    "0": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age5),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "1": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "2": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "3": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "4": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age5),
+    },
+    "5": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "6": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "7": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "8": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "9": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age10),
+    },
+    "10": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "11": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "12": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "13": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "14": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age15),
+    },
+    "15": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "16": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "17": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "18": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "19": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age20),
+    },
+    "20": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "21": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "22": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "23": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "24": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age25),
+    },
+    "25": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "26": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "27": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "28": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "29": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age30),
+    },
+    "30": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "31": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "32": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "33": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "34": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age35),
+    },
+    "35": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "36": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "37": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "38": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "39": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age40),
+    },
+    "40": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "41": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "42": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "43": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "44": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age45),
+    },
+    "45": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "46": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "47": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "48": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "49": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age50),
+    },
+    "50": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "51": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "52": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "53": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "54": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age55),
+    },
+    "55": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "56": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "57": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "58": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "59": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age60),
+    },
+    "60": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "61": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "62": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "63": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "64": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age65),
+    },
+    "65": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "66": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "67": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "68": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "69": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age70),
+    },
+    "70": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "71": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "72": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "73": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "74": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age75),
+    },
+    "75": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "76": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "77": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "78": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+    "79": {
+      "1": fixTwentyTwo(age0),
+      "2": fixTwentyTwo(age0),
+      "3": fixTwentyTwo(age0),
+      "4": fixTwentyTwo(age0),
+      "5": fixTwentyTwo(age0),
+      "6": fixTwentyTwo(age0),
+      "7": fixTwentyTwo(age0),
+      "8": fixTwentyTwo(age0),
+      "9": fixTwentyTwo(age0),
+      "10": fixTwentyTwo(age0),
+      "11": fixTwentyTwo(age0),
+      "12": fixTwentyTwo(age0),
+    },
+  }
+
+  // -------------------------
+
   const h = fixTwentyTwo(b + d)
   const j = fixTwentyTwo(a + c)
   const n = fixTwentyTwo(f + y)
@@ -292,232 +1435,235 @@ const onlineMatrixCalculation = (date: string): matrixData => {
 
   const fullAge = calculateFullAge.getFullAge(date);
 
-  switch (true) {
-    // ---- 0 ----
-    // case (fullAge.years < 1 || fullAge.years >= 79):
-    case (fullAge.years < 1 || (fullAge.years === 1 && fullAge.months < 3)):
-      years = age0;
-      break;
-    case (fullAge.years < 2 || (fullAge.years === 2 && fullAge.months < 6)):
-      years = age5_1;
-      break;
-    case (fullAge.years < 3 || (fullAge.years == 3 && fullAge.months < 9)):
-      years = age5_2;
-      break;
-    case (fullAge.years < 5):
-      years = age5_3;
-      break;
+  // @ts-ignore
+  years = resultAge[(fullAge.years).toString()][(fullAge.months + 1).toString()] || 5
 
-    // ---- 5 ----
-    case (fullAge.years < 6 || (fullAge.years === 6 && fullAge.months < 3)):
-      years = age5;
-      break;
-    case (fullAge.years < 7 || fullAge.years === 7 && fullAge.months < 6):
-      years = age10_1;
-      break;
-    case (fullAge.years < 8 || fullAge.years == 8 && fullAge.months < 9):
-      years = age10_2;
-      break;
-    case (fullAge.years < 10):
-      years = age10_3;
-      break;
-
-    // ---- 10 ----
-    case (fullAge.years < 11 || (fullAge.years === 11 && fullAge.months < 3)):
-      years = age10;
-      break;
-    case (fullAge.years < 12 || fullAge.years == 12 && fullAge.months < 6):
-      years = age15_1;
-      break;
-    case (fullAge.years < 13 || fullAge.years == 13 && fullAge.months < 9):
-      years = age15_2;
-      break;
-    case (fullAge.years < 15):
-      years = age15_3;
-      break;
-
-    // ---- 15 ----
-    case (fullAge.years < 16 || (fullAge.years === 16 && fullAge.months < 3)):
-      years = age15;
-      break;
-    case (fullAge.years < 17 || fullAge.years == 17 && fullAge.months < 6):
-      years = age20_1;
-      break;
-    case (fullAge.years < 18 || fullAge.years == 18 && fullAge.months < 9):
-      years = age20_2;
-      break;
-    case (fullAge.years < 20):
-      years = age20_3;
-      break;
-
-    // ---- 20 ----
-    case (fullAge.years < 21 || (fullAge.years === 21 && fullAge.months < 3)):
-      years = age20;
-      break;
-    case (fullAge.years < 22 || fullAge.years == 22 && fullAge.months < 6):
-      years = age25_1;
-      break;
-    case (fullAge.years < 23 || fullAge.years == 23 && fullAge.months < 9):
-      years = age25_2;
-      break;
-    case (fullAge.years < 25):
-      years = age25_3;
-      break;
-
-    // ---- 25 ----
-    case (fullAge.years < 26 || (fullAge.years === 26 && fullAge.months < 3)):
-      years = age25;
-      break;
-    case (fullAge.years < 27 || fullAge.years == 27 && fullAge.months < 6):
-      years = age30_1;
-      break;
-    case (fullAge.years < 28 || fullAge.years == 28 && fullAge.months < 9):
-      years = age30_2;
-      break;
-    case (fullAge.years < 30):
-      years = age30_3;
-      break;
-
-    // ---- 30 ----
-    case (fullAge.years < 30 || (fullAge.years === 30 && fullAge.months < 3)):
-      years = age30;
-      break;
-    case (fullAge.years < 32 || fullAge.years == 32 && fullAge.months < 6):
-      years = age35_1;
-      break;
-    case (fullAge.years < 33 || fullAge.years == 33 && fullAge.months < 9):
-      years = age35_2;
-      break;
-    case (fullAge.years < 35):
-      years = age35_3;
-      break;
-
-    // ---- 35 ----
-    case (fullAge.years < 36 || (fullAge.years === 36 && fullAge.months < 3)):
-      years = age35;
-      break;
-    case (fullAge.years < 37 || fullAge.years == 37 && fullAge.months < 6):
-      years = age40_1;
-      break;
-    case (fullAge.years < 38 || fullAge.years == 38 && fullAge.months < 9):
-      years = age40_2;
-      break;
-    case (fullAge.years < 40):
-      years = age40_3;
-      break;
-
-    // ---- 40 ----
-    case (fullAge.years < 41 || (fullAge.years === 41 && fullAge.months < 3)):
-      years = age40;
-      break;
-    case (fullAge.years < 42 || fullAge.years == 42 && fullAge.months < 6):
-      years = age45_1;
-      break;
-    case (fullAge.years < 43 || fullAge.years == 43 && fullAge.months < 9):
-      years = age45_2;
-      break;
-    case (fullAge.years < 45):
-      years = age45_3;
-      break;
-
-    // ---- 45 ----
-    case (fullAge.years < 46 || (fullAge.years === 46 && fullAge.months < 3)):
-      years = age45;
-      break;
-    case (fullAge.years < 47 || fullAge.years == 47 && fullAge.months < 6):
-      years = age50_1;
-      break;
-    case (fullAge.years < 48 || fullAge.years == 48 && fullAge.months < 9):
-      years = age50_2;
-      break;
-    case (fullAge.years < 50):
-      years = age50_3;
-      break;
-
-    // ---- 50 ----
-    case (fullAge.years < 51 || (fullAge.years === 51 && fullAge.months < 3)):
-      years = age50;
-      break;
-    case (fullAge.years < 52 || fullAge.years == 52 && fullAge.months < 6):
-      years = age55_1;
-      break;
-    case (fullAge.years < 53 || fullAge.years == 53 && fullAge.months < 9):
-      years = age55_2;
-      break;
-    case (fullAge.years < 55):
-      years = age55_3;
-      break;
-
-    // ---- 55 ----
-    case (fullAge.years < 56 || (fullAge.years === 56 && fullAge.months < 3)):
-      years = age55;
-      break;
-    case (fullAge.years < 57 || fullAge.years == 57 && fullAge.months < 6):
-      years = age60_1;
-      break;
-    case (fullAge.years < 58 || fullAge.years == 58 && fullAge.months < 9):
-      years = age60_2;
-      break;
-    case (fullAge.years < 60):
-      years = age60_3;
-      break;
-
-    // ---- 60 ----
-    case (fullAge.years < 61 || (fullAge.years === 61 && fullAge.months < 3)):
-      years = age60;
-      break;
-    case (fullAge.years < 62 || fullAge.years == 62 && fullAge.months < 6):
-      years = age65_1;
-      break;
-    case (fullAge.years < 63 || fullAge.years == 63 && fullAge.months < 9):
-      years = age65_2;
-      break;
-    case (fullAge.years < 65):
-      years = age65_3;
-      break;
-
-    // ---- 65 ----
-    case (fullAge.years < 66 || (fullAge.years === 66 && fullAge.months < 3)):
-      years = age65;
-      break;
-    case (fullAge.years < 67 || fullAge.years == 67 && fullAge.months < 6):
-      years = age70_1;
-      break;
-    case (fullAge.years < 68 || fullAge.years == 68 && fullAge.months < 9):
-      years = age70_2;
-      break;
-    case (fullAge.years < 70):
-      years = age70_3;
-      break;
-
-    // ---- 70 ----
-    case (fullAge.years < 71 || (fullAge.years === 71 && fullAge.months < 3)):
-      years = age70;
-      break;
-    case (fullAge.years < 72 || fullAge.years == 72 && fullAge.months < 6):
-      years = age75_1;
-      break;
-    case (fullAge.years < 73 || fullAge.years == 73 && fullAge.months < 9):
-      years = age75_2;
-      break;
-    case (fullAge.years < 75):
-      years = age75_3;
-      break;
-
-    // ---- 75 ----
-    case (fullAge.years < 76 || (fullAge.years === 76 && fullAge.months < 3)):
-      years = age75;
-      break;
-    case (fullAge.years < 77 || fullAge.years == 77 && fullAge.months < 6):
-      years = age80_1;
-      break;
-    case (fullAge.years < 78 || fullAge.years == 78 && fullAge.months < 9):
-      years = age80_2;
-      break;
-    case (fullAge.years < 80):
-      years = age80_3;
-      break;
-  }
+  // switch (true) {
+  //   // ---- 0 ----
+  //   // case (fullAge.years < 1 || fullAge.years >= 79):
+  //   case (fullAge.years < 1 || (fullAge.years === 1 && fullAge.months < 3)):
+  //     years = age0;
+  //     break;
+  //   case (fullAge.years < 2 || (fullAge.years === 2 && fullAge.months < 6)):
+  //     years = age5_1;
+  //     break;
+  //   case (fullAge.years < 3 || (fullAge.years == 3 && fullAge.months < 9)):
+  //     years = age5_2;
+  //     break;
+  //   case (fullAge.years < 5):
+  //     years = age5_3;
+  //     break;
+  //
+  //   // ---- 5 ----
+  //   case (fullAge.years < 6 || (fullAge.years === 6 && fullAge.months < 3)):
+  //     years = age5;
+  //     break;
+  //   case (fullAge.years < 7 || fullAge.years === 7 && fullAge.months < 6):
+  //     years = age10_1;
+  //     break;
+  //   case (fullAge.years < 8 || fullAge.years == 8 && fullAge.months < 9):
+  //     years = age10_2;
+  //     break;
+  //   case (fullAge.years < 10):
+  //     years = age10_3;
+  //     break;
+  //
+  //   // ---- 10 ----
+  //   case (fullAge.years < 11 || (fullAge.years === 11 && fullAge.months < 3)):
+  //     years = age10;
+  //     break;
+  //   case (fullAge.years < 12 || fullAge.years == 12 && fullAge.months < 6):
+  //     years = age15_1;
+  //     break;
+  //   case (fullAge.years < 13 || fullAge.years == 13 && fullAge.months < 9):
+  //     years = age15_2;
+  //     break;
+  //   case (fullAge.years < 15):
+  //     years = age15_3;
+  //     break;
+  //
+  //   // ---- 15 ----
+  //   case (fullAge.years < 16 || (fullAge.years === 16 && fullAge.months < 3)):
+  //     years = age15;
+  //     break;
+  //   case (fullAge.years < 17 || fullAge.years == 17 && fullAge.months < 6):
+  //     years = age20_1;
+  //     break;
+  //   case (fullAge.years < 18 || fullAge.years == 18 && fullAge.months < 9):
+  //     years = age20_2;
+  //     break;
+  //   case (fullAge.years < 20):
+  //     years = age20_3;
+  //     break;
+  //
+  //   // ---- 20 ----
+  //   case (fullAge.years < 21 || (fullAge.years === 21 && fullAge.months < 3)):
+  //     years = age20;
+  //     break;
+  //   case (fullAge.years < 22 || fullAge.years == 22 && fullAge.months < 6):
+  //     years = age25_1;
+  //     break;
+  //   case (fullAge.years < 23 || fullAge.years == 23 && fullAge.months < 9):
+  //     years = age25_2;
+  //     break;
+  //   case (fullAge.years < 25):
+  //     years = age25_3;
+  //     break;
+  //
+  //   // ---- 25 ----
+  //   case (fullAge.years < 26 || (fullAge.years === 26 && fullAge.months < 3)):
+  //     years = age25;
+  //     break;
+  //   case (fullAge.years < 27 || fullAge.years == 27 && fullAge.months < 6):
+  //     years = age30_1;
+  //     break;
+  //   case (fullAge.years < 28 || fullAge.years == 28 && fullAge.months < 9):
+  //     years = age30_2;
+  //     break;
+  //   case (fullAge.years < 30):
+  //     years = age30_3;
+  //     break;
+  //
+  //   // ---- 30 ----
+  //   case (fullAge.years < 30 || (fullAge.years === 30 && fullAge.months < 3)):
+  //     years = age30;
+  //     break;
+  //   case (fullAge.years < 32 || fullAge.years == 32 && fullAge.months < 6):
+  //     years = age35_1;
+  //     break;
+  //   case (fullAge.years < 33 || fullAge.years == 33 && fullAge.months < 9):
+  //     years = age35_2;
+  //     break;
+  //   case (fullAge.years < 35):
+  //     years = age35_3;
+  //     break;
+  //
+  //   // ---- 35 ----
+  //   case (fullAge.years < 36 || (fullAge.years === 36 && fullAge.months < 3)):
+  //     years = age35;
+  //     break;
+  //   case (fullAge.years < 37 || fullAge.years == 37 && fullAge.months < 6):
+  //     years = age40_1;
+  //     break;
+  //   case (fullAge.years < 38 || fullAge.years == 38 && fullAge.months < 9):
+  //     years = age40_2;
+  //     break;
+  //   case (fullAge.years < 40):
+  //     years = age40_3;
+  //     break;
+  //
+  //   // ---- 40 ----
+  //   case (fullAge.years < 41 || (fullAge.years === 41 && fullAge.months < 3)):
+  //     years = age40;
+  //     break;
+  //   case (fullAge.years < 42 || fullAge.years == 42 && fullAge.months < 6):
+  //     years = age45_1;
+  //     break;
+  //   case (fullAge.years < 43 || fullAge.years == 43 && fullAge.months < 9):
+  //     years = age45_2;
+  //     break;
+  //   case (fullAge.years < 45):
+  //     years = age45_3;
+  //     break;
+  //
+  //   // ---- 45 ----
+  //   case (fullAge.years < 46 || (fullAge.years === 46 && fullAge.months < 3)):
+  //     years = age45;
+  //     break;
+  //   case (fullAge.years < 47 || fullAge.years == 47 && fullAge.months < 6):
+  //     years = age50_1;
+  //     break;
+  //   case (fullAge.years < 48 || fullAge.years == 48 && fullAge.months < 9):
+  //     years = age50_2;
+  //     break;
+  //   case (fullAge.years < 50):
+  //     years = age50_3;
+  //     break;
+  //
+  //   // ---- 50 ----
+  //   case (fullAge.years < 51 || (fullAge.years === 51 && fullAge.months < 3)):
+  //     years = age50;
+  //     break;
+  //   case (fullAge.years < 52 || fullAge.years == 52 && fullAge.months < 6):
+  //     years = age55_1;
+  //     break;
+  //   case (fullAge.years < 53 || fullAge.years == 53 && fullAge.months < 9):
+  //     years = age55_2;
+  //     break;
+  //   case (fullAge.years < 55):
+  //     years = age55_3;
+  //     break;
+  //
+  //   // ---- 55 ----
+  //   case (fullAge.years < 56 || (fullAge.years === 56 && fullAge.months < 3)):
+  //     years = age55;
+  //     break;
+  //   case (fullAge.years < 57 || fullAge.years == 57 && fullAge.months < 6):
+  //     years = age60_1;
+  //     break;
+  //   case (fullAge.years < 58 || fullAge.years == 58 && fullAge.months < 9):
+  //     years = age60_2;
+  //     break;
+  //   case (fullAge.years < 60):
+  //     years = age60_3;
+  //     break;
+  //
+  //   // ---- 60 ----
+  //   case (fullAge.years < 61 || (fullAge.years === 61 && fullAge.months < 3)):
+  //     years = age60;
+  //     break;
+  //   case (fullAge.years < 62 || fullAge.years == 62 && fullAge.months < 6):
+  //     years = age65_1;
+  //     break;
+  //   case (fullAge.years < 63 || fullAge.years == 63 && fullAge.months < 9):
+  //     years = age65_2;
+  //     break;
+  //   case (fullAge.years < 65):
+  //     years = age65_3;
+  //     break;
+  //
+  //   // ---- 65 ----
+  //   case (fullAge.years < 66 || (fullAge.years === 66 && fullAge.months < 3)):
+  //     years = age65;
+  //     break;
+  //   case (fullAge.years < 67 || fullAge.years == 67 && fullAge.months < 6):
+  //     years = age70_1;
+  //     break;
+  //   case (fullAge.years < 68 || fullAge.years == 68 && fullAge.months < 9):
+  //     years = age70_2;
+  //     break;
+  //   case (fullAge.years < 70):
+  //     years = age70_3;
+  //     break;
+  //
+  //   // ---- 70 ----
+  //   case (fullAge.years < 71 || (fullAge.years === 71 && fullAge.months < 3)):
+  //     years = age70;
+  //     break;
+  //   case (fullAge.years < 72 || fullAge.years == 72 && fullAge.months < 6):
+  //     years = age75_1;
+  //     break;
+  //   case (fullAge.years < 73 || fullAge.years == 73 && fullAge.months < 9):
+  //     years = age75_2;
+  //     break;
+  //   case (fullAge.years < 75):
+  //     years = age75_3;
+  //     break;
+  //
+  //   // ---- 75 ----
+  //   case (fullAge.years < 76 || (fullAge.years === 76 && fullAge.months < 3)):
+  //     years = age75;
+  //     break;
+  //   case (fullAge.years < 77 || fullAge.years == 77 && fullAge.months < 6):
+  //     years = age80_1;
+  //     break;
+  //   case (fullAge.years < 78 || fullAge.years == 78 && fullAge.months < 9):
+  //     years = age80_2;
+  //     break;
+  //   case (fullAge.years < 80):
+  //     years = age80_3;
+  //     break;
+  // }
 
   console.log(fullAge)
   console.log("years", years)

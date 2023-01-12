@@ -6,11 +6,17 @@ import {useAppDispatch, useAppSelector} from "./hooks/redux";
 import Layout from "./hoc/Layout";
 import {appSlice} from "./../src/redux/reducers/AppSlice"
 
+const TITLE = 'Матрица судьбы';
+
 function App() {
   const {changeShowResult, changeActiveTab} = appSlice.actions
   const [activeTab, setActiveTab] = useState<string>(Object.keys(tabs)[0]);
   const showResult = useAppSelector(state => state.app.showResult)
   const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    document.title = TITLE;
+  }, []);
 
   useEffect(() => {
     dispatch(changeShowResult(false))

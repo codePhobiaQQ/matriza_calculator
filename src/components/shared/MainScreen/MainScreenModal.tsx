@@ -275,8 +275,8 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
               <>
                 <div className="selectWrapper">
                   <Select
-                    ref={year1Ref}
-                    placeholder={"Год"}
+                    ref={day1Ref}
+                    placeholder={"День"}
                     classNames={{
                       container: (state) => "selectContainer",
                       valueContainer: (state) => "selectValueContainer",
@@ -284,7 +284,7 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                       control: (state) =>
                         state.isFocused ? "selectData" : "selectData",
                     }}
-                    options={yearsOption}
+                    options={daysOption}
                   />
                 </div>
                 <div className="selectWrapper">
@@ -303,8 +303,8 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                 </div>
                 <div className="selectWrapper">
                   <Select
-                    ref={day1Ref}
-                    placeholder={"День"}
+                    ref={year1Ref}
+                    placeholder={"Год"}
                     classNames={{
                       container: (state) => "selectContainer",
                       valueContainer: (state) => "selectValueContainer",
@@ -312,7 +312,7 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                       control: (state) =>
                         state.isFocused ? "selectData" : "selectData",
                     }}
-                    options={daysOption}
+                    options={yearsOption}
                   />
                 </div>
               </>
@@ -322,8 +322,8 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                 <span>Партнер 1</span>
                 <div className="selectWrapper">
                   <Select
-                    ref={year1Ref}
-                    placeholder={"Год"}
+                    ref={day1Ref}
+                    placeholder={"День"}
                     classNames={{
                       container: (state) => "selectContainer",
                       valueContainer: (state) => "selectValueContainer",
@@ -331,7 +331,7 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                       control: (state) =>
                         state.isFocused ? "selectData" : "selectData",
                     }}
-                    options={yearsOption}
+                    options={daysOption}
                   />
                 </div>
                 <div className="selectWrapper">
@@ -350,22 +350,7 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                 </div>
                 <div className="selectWrapper">
                   <Select
-                    ref={day1Ref}
-                    placeholder={"День"}
-                    classNames={{
-                      container: (state) => "selectContainer",
-                      valueContainer: (state) => "selectValueContainer",
-                      input: (state) => "selectInput",
-                      control: (state) =>
-                        state.isFocused ? "selectData" : "selectData",
-                    }}
-                    options={daysOption}
-                  />
-                </div>
-                <span className={"SecondPartner"}>Партнер 2</span>
-                <div className="selectWrapper">
-                  <Select
-                    ref={year2Ref}
+                    ref={year1Ref}
                     placeholder={"Год"}
                     classNames={{
                       container: (state) => "selectContainer",
@@ -375,6 +360,21 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                         state.isFocused ? "selectData" : "selectData",
                     }}
                     options={yearsOption}
+                  />
+                </div>
+                <span className={"SecondPartner"}>Партнер 2</span>
+                <div className="selectWrapper">
+                  <Select
+                    ref={day2Ref}
+                    placeholder={"День"}
+                    classNames={{
+                      container: (state) => "selectContainer",
+                      valueContainer: (state) => "selectValueContainer",
+                      input: (state) => "selectInput",
+                      control: (state) =>
+                        state.isFocused ? "selectData" : "selectData",
+                    }}
+                    options={daysOption}
                   />
                 </div>
                 <div className="selectWrapper">
@@ -393,8 +393,8 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                 </div>
                 <div className="selectWrapper">
                   <Select
-                    ref={day2Ref}
-                    placeholder={"День"}
+                    ref={year2Ref}
+                    placeholder={"Год"}
                     classNames={{
                       container: (state) => "selectContainer",
                       valueContainer: (state) => "selectValueContainer",
@@ -402,7 +402,7 @@ const MainScreenModal = ({show, handleClose, type}: MainScreenModalI) => {
                       control: (state) =>
                         state.isFocused ? "selectData" : "selectData",
                     }}
-                    options={daysOption}
+                    options={yearsOption}
                   />
                 </div>
               </>
