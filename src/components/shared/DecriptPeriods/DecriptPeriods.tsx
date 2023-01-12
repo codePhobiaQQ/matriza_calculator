@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useAppSelector} from "../../../hooks/redux";
 import ResultItemList, {numbType} from "../ResultSection/components/ResultItemsList/ResultItemList";
+import decryptPeriods from "../../../data/decryptPeriods";
 
 interface DecriptPeriodsI {
   classing?: string;
@@ -11,9 +12,9 @@ const DecriptPeriods = ({classing = "", periods = [1]}: DecriptPeriodsI) => {
   const matrixData = useAppSelector(state => state.app.matrixData)
   const activeTab = useAppSelector(state => state.app.activeTab)
 
-  const [periodsResult, setPeriodsResult] = useState<numbType[]>();
-  const [financeResult, setFinanceResult] = useState<numbType[]>();
-  const [comfortResult, setComfortResult] = useState<numbType[]>();
+  const [periodsResult, setPeriodsResult] = useState<numbType>();
+  const [financeResult, setFinanceResult] = useState<numbType>();
+  const [comfortResult, setComfortResult] = useState<numbType>();
 
   useEffect(() => {
     // @ts-ignore
@@ -26,9 +27,9 @@ const DecriptPeriods = ({classing = "", periods = [1]}: DecriptPeriodsI) => {
 
   return (
     <div className={`${classing} DecryptPeriods`}>
-      {activeTab == 1 && <ResultItemList titleText={"Рекомендации на ближайший период жизни"} periods={periodsResult}/>}
-      {activeTab == 1 && <ResultItemList titleText={"Финансовая карма"} periods={financeResult}/>}
-      {activeTab == 2 && <ResultItemList titleText={"Зона комфорта пары"} periods={comfortResult}/>}
+      {activeTab == 1 && <ResultItemList titleText={"Рекомендации на ближайший период жизни"} texts={decryptPeriods[periodsResult || "1"]} />}
+      {activeTab == 1 && <ResultItemList titleText={"Финансовая карма"} texts={decryptPeriods[financeResult || "1"]} />}
+      {activeTab == 2 && <ResultItemList titleText={"Зона комфорта пары"} texts={decryptPeriods[comfortResult || "1"]} />}
     </div>
   );
 };

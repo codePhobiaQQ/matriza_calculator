@@ -130,9 +130,10 @@ export interface matrixData {
 }
 
 const onlineMatrixCalculation = (date: string): matrixData => {
-  const a = sumOfDecimals(date.split("-")[2])
-  const b = sumOfDecimals(date.split("-")[1])
-  const c = sumOfDecimals(date.split("-")[0])
+  const a = fixTwentyTwo(sumOfDecimals(date.split("-")[2]))
+  const b = fixTwentyTwo(sumOfDecimals(date.split("-")[1]))
+  const c = fixTwentyTwo(sumOfDecimals(date.split("-")[0]))
+
   const d = fixTwentyTwo(a + b + c)
   const e = fixTwentyTwo(a + b + c + d)
   const f = fixTwentyTwo(a + b)

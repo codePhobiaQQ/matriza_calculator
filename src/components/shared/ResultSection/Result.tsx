@@ -42,12 +42,12 @@ const Result = ({activeTab}: ResultI) => {
               <div className="MapSection">
                 <Matrix activeTab={activeTab} classing={`${tabs[activeTab].id !== 3 ? "m-auto" : ""}`}/>
                 {
-                  tabs[activeTab].id === 3 && <CalcTable/>
+                  tabs[activeTab].id === 3 && <CalcTable />
                 }
               </div>
               {activeTab1 !== 3 && <h3 className={`BottomInfoTitle ResultTitle m_t_20`}>Предназначение</h3>}
-              <BottomInfoSection/>
-              <DecriptPeriods/>
+              <BottomInfoSection />
+              <DecriptPeriods />
               <ActionSection />
             </div>
           </div>
