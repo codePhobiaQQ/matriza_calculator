@@ -130,12 +130,29 @@ export interface matrixData {
   t: number;
 }
 
-const onlineMatrixCalculation = (date: string): matrixData => {
+const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): matrixData => {
   console.log("date", date)
 
-  const a = fixTwentyTwo(date.split("-")[2])
-  const b = fixTwentyTwo(date.split("-")[1])
-  const c = fixTwentyTwo(fixTwentyTwo(date.split("-")[0]))
+  let a = fixTwentyTwo(date.split("-")[2])
+  let b = fixTwentyTwo(date.split("-")[1])
+  let c = fixTwentyTwo(fixTwentyTwo(date.split("-")[0]))
+
+  if (isSovmest) {
+    const a1 = a
+    const b1 = b
+    const c1 = c
+
+    // @ts-ignore
+    const _a = fixTwentyTwo(date1?.split("-")[2])
+    // @ts-ignore
+    const _b = fixTwentyTwo(date1?.split("-")[1])
+    // @ts-ignore
+    const _c = fixTwentyTwo(date1?.split("-")[0])
+
+    a = fixTwentyTwo(a1 + _a)
+    b = fixTwentyTwo(a1 + _a)
+    c = fixTwentyTwo(a1 + _a)
+  }
 
   const d = fixTwentyTwo(a + b + c)
   const e = fixTwentyTwo(a + b + c + d)

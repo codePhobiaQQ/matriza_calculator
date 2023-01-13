@@ -17,6 +17,7 @@ interface MatrixI {
 
 const Matrix = ({classing, activeTab}: MatrixI) => {
   const matrixData = useAppSelector(state => state.app.matrixData)
+  console.log(matrixData)
 
   return (
     <div className={`matrix ${classing}`}>
