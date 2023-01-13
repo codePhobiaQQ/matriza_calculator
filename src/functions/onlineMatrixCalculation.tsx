@@ -150,8 +150,8 @@ const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): m
     const _c = fixTwentyTwo(date1?.split("-")[0])
 
     a = fixTwentyTwo(a1 + _a)
-    b = fixTwentyTwo(a1 + _a)
-    c = fixTwentyTwo(a1 + _a)
+    b = fixTwentyTwo(b1 + _b)
+    c = fixTwentyTwo(c1 + _c)
   }
 
   const d = fixTwentyTwo(a + b + c)
