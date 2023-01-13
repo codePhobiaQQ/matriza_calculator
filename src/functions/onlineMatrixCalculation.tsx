@@ -137,29 +137,51 @@ const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): m
   let b = fixTwentyTwo(date.split("-")[1])
   let c = fixTwentyTwo(fixTwentyTwo(date.split("-")[0]))
 
+  let d = fixTwentyTwo(a + b + c)
+  let e = fixTwentyTwo(a + b + c + d)
+  let f = fixTwentyTwo(a + b)
+  let g = fixTwentyTwo(b + c)
+  let y = fixTwentyTwo(c + d)
+  let k = fixTwentyTwo(a + d)
+
   if (isSovmest) {
     const a1 = a
     const b1 = b
     const c1 = c
+    const d1 = d
+    const e1 = e
+    const f1 = f
+    const g1 = g
+    const y1 = y
+    const k1 = k
 
     // @ts-ignore
     const _a = fixTwentyTwo(date1?.split("-")[2])
     // @ts-ignore
     const _b = fixTwentyTwo(date1?.split("-")[1])
     // @ts-ignore
-    const _c = fixTwentyTwo(date1?.split("-")[0])
+    const _c = fixTwentyTwo(fixTwentyTwo(date1?.split("-")[0]))
+
+    let _d = fixTwentyTwo(_a + _b + _c)
+    let _e = fixTwentyTwo(_a + _b + _c + _d)
+    let _f = fixTwentyTwo(_a + _b)
+    let _g = fixTwentyTwo(_b + _c)
+    let _y = fixTwentyTwo(_c + _d)
+    let _k = fixTwentyTwo(_a + _d)
+
+    console.log(a, b, c, d, e, f, g, y, k)
+    console.log(_a, _b, _c, _d, _e, _f, _g, _y, _k)
 
     a = fixTwentyTwo(a1 + _a)
     b = fixTwentyTwo(b1 + _b)
     c = fixTwentyTwo(c1 + _c)
+    d = fixTwentyTwo(d1 + _d)
+    e = fixTwentyTwo(e1 + _e)
+    f = fixTwentyTwo(f1 + _f)
+    g = fixTwentyTwo(g1 + _g)
+    y = fixTwentyTwo(y1 + _y)
+    k = fixTwentyTwo(k1 + _k)
   }
-
-  const d = fixTwentyTwo(a + b + c)
-  const e = fixTwentyTwo(a + b + c + d)
-  const f = fixTwentyTwo(a + b)
-  const g = fixTwentyTwo(b + c)
-  const y = fixTwentyTwo(c + d)
-  const k = fixTwentyTwo(a + d)
 
   const d1 = fixTwentyTwo(d + e)
   const d2 = fixTwentyTwo(d + d1)
@@ -3128,7 +3150,7 @@ const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): m
   // @ts-ignore
   console.log(`${(fullAge.years).toString()}_${(fullAge.months + 1).toString()}`)
 
-  if (fullAge.months + 1 === 12 ) {
+  if (fullAge.months + 1 === 12) {
     years = _resultAge[(Number(fullAge.years) % 80).toString() + "_0"]
   } else {
     years = _resultAge[`${(fullAge.years).toString()}_${(fullAge.months + 1).toString()}`] || 5
