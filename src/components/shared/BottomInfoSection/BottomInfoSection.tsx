@@ -20,7 +20,7 @@ const titleData = {
     title2: "Слияние",
     title3: "Гармония",
     description1: "Показывает, что партнёры должны проработать каждый для себя и чему должны научиться, чтобы быть вместе.",
-    description2: " Определяет, какую социальную роль выполняет пара, какую задачу выполняет и какую энергию отдает своему роду. ",
+    description2: "Определяет, какую социальную роль выполняет пара, какую задачу выполняет и какую энергию отдает своему роду. ",
     description3: "Это духовная составляющая пары, это то, на чем базируется пара (ресурс) и куда и к чему ей следует стремиться в своем развитии."
   },
 }
@@ -29,12 +29,14 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
   const matrixData = useAppSelector(state => state.app.matrixData)
   const activeTab = useAppSelector(state => state.app.activeTab)
 
+  console.log(activeTab)
+
   return (
     <>
       {activeTab !== 3 && <div className={`${classing} BottomInfoSection`}>
           <div className="BottomInfoSection_left BottomInfoSection_side">
               <h3>{titleData[activeTab || 1].title1}</h3>
-              <p>{titleData[activeTab || 1].description2}</p>
+              <p>{titleData[activeTab || 1].description1}</p>
               <div className="BottomInfoSection_resultLines">
                   <div className="BottomInfoSection_resultLine">
                       <span className={"BottomInfoSection_resultLine_title"}>Небо</span>
