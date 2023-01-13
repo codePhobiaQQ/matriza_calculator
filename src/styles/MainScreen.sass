@@ -246,10 +246,15 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
 @media screen and (max-width: 576px)
   .MainScreen
     height: 70vh
+    .container.first
     .leftSide
       text-align: center
       button
         margin: auto
+      .leftSideInner
+        h1
+          white-space: nowrap
+
     .container.second
       max-width: inherit
       width: 85%
