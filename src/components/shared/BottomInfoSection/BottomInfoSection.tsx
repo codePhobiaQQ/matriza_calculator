@@ -79,7 +79,7 @@ const BottomInfoSection = ({classing = ""}: BottomInfoSectionI) => {
               <div className="BottomInfoSection_resultLines">
                   <div className="BottomInfoSection_resultLine">
             <span
-                className={"BottomInfoSection_resultLine_number"}>{fixTwentyTwo(fixTwentyTwo(Number(matrixData?.j) + Number(matrixData?.h)) + Number(matrixData?.n) + Number(matrixData?.t))}</span>
+                className={"BottomInfoSection_resultLine_number"}>{fixTwentyTwo(fixTwentyTwo(Number(matrixData?.j) + Number(matrixData?.h)) + fixTwentyTwo( Number(matrixData?.n) + Number(matrixData?.t)))}</span>
                   </div>
               </div>
           </div>
