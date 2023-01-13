@@ -246,12 +246,12 @@ const Matrix = ({classing, activeTab}: MatrixI) => {
               className="matrix-diagram__number js-personal-calculation-item -position-k1 -bold"
               data-personal-calculation-position="k1"
             >
-              {activeTab == "Личная матрица" && matrixData?.age25}
+              {activeTab == "Личная матрица" && matrixData?._resultAge["25_0"]}
             </div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-k4"
               data-personal-calculation-position="k4"
-            >{activeTab == "Личная матрица" && matrixData?.age30_1}</div>
+            >{activeTab == "Личная матрица" && matrixData?._resultAge["26_3"]}</div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-k3"
               data-personal-calculation-position="k3"
@@ -265,7 +265,7 @@ const Matrix = ({classing, activeTab}: MatrixI) => {
               className="matrix-diagram__number js-personal-calculation-item -position-k8"
               data-personal-calculation-position="k8"
             >
-              {activeTab == "Личная матрица" && matrixData?.age35_1}
+              {activeTab == "Личная матрица" && matrixData?._resultAge["31_3"]}
             </div>
             <div
               className="matrix-diagram__number js-personal-calculation-item -position-k7"

@@ -120,6 +120,7 @@ export interface matrixData {
   age80_1: number;
   age80_2: number;
   age80_3: number;
+  _resultAge: any;
 
   years: number;
 
@@ -3091,10 +3092,10 @@ const onlineMatrixCalculation = (date: string): matrixData => {
 
     const tmp79_11 = fixTwentyTwo(tmp79_10 + tmp0_0)
     _resultAge["79_11"] = tmp79_11
-
-
   };
   _resultHandler()
+
+  console.log(_resultAge)
 
   // -------------------------
 
@@ -3230,7 +3231,8 @@ const onlineMatrixCalculation = (date: string): matrixData => {
     j,
     n,
     t,
-    years
+    years,
+    _resultAge
   }
 };
 
