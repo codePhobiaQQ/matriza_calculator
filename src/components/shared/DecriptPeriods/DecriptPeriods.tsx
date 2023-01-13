@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {useAppSelector} from "../../../hooks/redux";
 import ResultItemList, {numbType} from "../ResultSection/components/ResultItemsList/ResultItemList";
 import decryptPeriods from "../../../data/decryptPeriods";
+import decryptFinance from "../../../data/decryptFinance";
+import decryptComphort from "../../../data/decriptComphort";
 
 interface DecriptPeriodsI {
   classing?: string;
@@ -28,8 +30,8 @@ const DecriptPeriods = ({classing = "", periods = [1]}: DecriptPeriodsI) => {
   return (
     <div className={`${classing} DecryptPeriods`}>
       {activeTab == 1 && <ResultItemList titleText={"Рекомендации на ближайший период жизни"} texts={decryptPeriods[periodsResult || "1"]} />}
-      {activeTab == 1 && <ResultItemList titleText={"Финансовая карма"} texts={decryptPeriods[financeResult || "1"]} />}
-      {activeTab == 2 && <ResultItemList titleText={"Зона комфорта пары"} texts={decryptPeriods[comfortResult || "1"]} />}
+      {activeTab == 1 && <ResultItemList titleText={"Финансовая карма"} texts={decryptFinance[financeResult || "1"]} />}
+      {activeTab == 2 && <ResultItemList titleText={"Зона комфорта пары"} texts={decryptComphort[comfortResult || "1"]} />}
     </div>
   );
 };
