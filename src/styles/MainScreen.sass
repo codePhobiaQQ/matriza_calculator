@@ -242,3 +242,25 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
       text-align: center
       button
         margin: auto
+
+@media screen and (max-width: 576px)
+  .MainScreen
+    height: 70vh
+    .leftSide
+      text-align: center
+      button
+        margin: auto
+    .container.second
+      max-width: inherit
+      width: 85%
+      .tabsWrapper .tab
+        font-size: $px22
+        max-width: Min(calc(#{$index} * 12.5), 150px)
+
+  .CalculationModal
+    display: flex
+    align-items: center
+    .CalculationModalInner
+      height: 80%
+      top: 10%
+
