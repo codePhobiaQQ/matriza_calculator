@@ -31,6 +31,7 @@ $leftSide: 60%
         h1
           font-size: Min(#{$index} * 3.5, 70px)
           line-height: 1.2em
+          height: 2em
           margin-bottom: Min(#{$index} * 3.5, 70px)
 
         button
@@ -60,12 +61,19 @@ $leftSide: 60%
           font-size: $px24
           font-family: "TTL", sans-serif
           color: #C58697
+          border: 1px solid #C58697
           line-height: 1.2em
           transition: all .3s ease-in-out
           cursor: pointer
           max-width: Min(#{$index} * 10, 200px)
+          padding: $px5 $px10
+          border-radius: $px15
+          span
+            word-spacing: 30000px
           &.active
-            color: #582734
+            background-color: #582734
+            border-color: #582734
+            color: #fff
         .separator
           font-size: Min(#{$index} * 3.5, 70px)
           font-family: "TTT", sans-serif
@@ -119,6 +127,7 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
       width: 95%
       font-size: $px27
       line-height: 1.2em
+
       @include titleMix
     .Close
       position: absolute
@@ -209,6 +218,7 @@ $formWidth: Min(calc(#{$index} * 20), 400px)
           order: 1
           width: 100%
           margin-top: auto
+          max-height: 50%
           margin-bottom: Min(calc(#{$index} * 2.5), 50px)
           svg
             width: Min(calc(#{$index} * 23), 460px)
