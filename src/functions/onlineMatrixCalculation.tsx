@@ -1,6 +1,6 @@
 import fixTwentyTwo from "../utils/fixTwentyTwo";
-
-const calculateFullAge = require('full-age-calculator');
+// @ts-ignore
+import * as calculateFullAge from 'full-age-calculator';
 
 export interface matrixData {
   a: number;
@@ -312,6 +312,7 @@ const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): m
 
 
   let _resultAge: any = {}
+
   const _resultHandler = () => {
     const tmp0_0 = age0
     _resultAge["0_0"] = tmp0_0;
@@ -3144,7 +3145,7 @@ const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): m
   const t = fixTwentyTwo(g + k)
 
   let years;
-
+  
   const fullAge = calculateFullAge.getFullAge(date);
 
   // @ts-ignore
