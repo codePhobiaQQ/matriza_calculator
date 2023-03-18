@@ -40,7 +40,9 @@ const DecriptPeriods = ({ classing = '', periods }: DecriptPeriodsI) => {
 					<p>{el}</p>
 				))} */}
 
-			{activeTab == 1 && <ResultItemList titleText={'Рекомендации на ближайший период жизни'} texts={decryptPeriods[periodsResult || '1']} />}
+			{activeTab == 1 && (
+				<ResultItemList titleText={`Рекомендации на ближайший период жизни (${periodsResult})`} texts={decryptPeriods[periodsResult || '1']} />
+			)}
 			{activeTab == 1 && <ResultItemList titleText={'Финансовая карма'} texts={decryptFinance[financeResult || '1']} />}
 			{activeTab == 2 && <ResultItemList titleText={'Зона комфорта пары'} texts={decryptComphort[comfortResult || '1']} />}
 		</div>
