@@ -32,11 +32,13 @@ const DecriptPeriods = ({ classing = '', periods }: DecriptPeriodsI) => {
 		<div className={`${classing} DecryptPeriods`}>
 			<p>{periodsResult}</p>
 
-			{JSON.stringify(matrixData)
+			{matrixData?.years}
+
+			{/* {JSON.stringify(matrixData)
 				.split(',')
 				.map(el => (
 					<p>{el}</p>
-				))}
+				))} */}
 
 			{activeTab == 1 && <ResultItemList titleText={'Рекомендации на ближайший период жизни'} texts={decryptPeriods[periodsResult || '1']} />}
 			{activeTab == 1 && <ResultItemList titleText={'Финансовая карма'} texts={decryptFinance[financeResult || '1']} />}
