@@ -3143,7 +3143,7 @@ const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): m
   const n = fixTwentyTwo(f + y)
   const t = fixTwentyTwo(g + k)
 
-  let years = 5;
+  let years;
 
   const fullAge = calculateFullAge.getFullAge(date);
 
