@@ -30,7 +30,7 @@ const DecriptPeriods = ({ classing = '', periods }: DecriptPeriodsI) => {
 
 	return (
 		<div className={`${classing} DecryptPeriods`}>
-			<p>{periodsResult}</p>
+			{/* <p>{periodsResult}</p>
 
 			{matrixData?.years}
 
@@ -38,7 +38,7 @@ const DecriptPeriods = ({ classing = '', periods }: DecriptPeriodsI) => {
 				.split(',')
 				.map(el => (
 					<p>{el}</p>
-				))}
+				))} */}
 
 			{activeTab == 1 && <ResultItemList titleText={'Рекомендации на ближайший период жизни'} texts={decryptPeriods[periodsResult || '1']} />}
 			{activeTab == 1 && <ResultItemList titleText={'Финансовая карма'} texts={decryptFinance[financeResult || '1']} />}
