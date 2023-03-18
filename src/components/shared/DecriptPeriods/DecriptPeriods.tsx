@@ -22,12 +22,11 @@ const DecriptPeriods = ({ classing = '', periods }: DecriptPeriodsI) => {
 		// @ts-ignore
 		setPeriodsResult([matrixData?.years])
 		console.log('period dot', matrixData?.years)
-
 		// @ts-ignore
 		setFinanceResult([matrixData.c2])
 		// @ts-ignore
 		setComfortResult([matrixData.e])
-	}, [matrixData])
+	}, [matrixData, activeTab])
 
 	return (
 		<div className={`${classing} DecryptPeriods`}>
