@@ -3153,7 +3153,7 @@ const onlineMatrixCalculation = (date: string, date1 = "", isSovmest = false): m
   if (fullAge.months + 1 === 12) {
     years = _resultAge[(Number(fullAge.years) % 80).toString() + "_0"]
   } else {
-    years = _resultAge[`${(fullAge.years).toString()}_${(fullAge.months + 1).toString()}`] || 5
+    years = _resultAge[`${(fullAge.years).toString()}_${(fullAge.months + 1).toString()}`]
   }
 
   console.log(fullAge)
