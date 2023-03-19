@@ -3190,10 +3190,16 @@ const onlineMatrixCalculation = (date: string, date1 = '', isSovmest = false): m
 	// @ts-ignore
 	console.log(`${fullAge.years.toString()}_${(fullAge.months + 1).toString()}`)
 
-	if (fullAge.months + 1 === 12) {
+	// if (fullAge.months + 1 === 12) {
+	// 	years = _resultAge[(Number(fullAge.years) % 80).toString() + '_0']
+	// } else {
+	// 	years = _resultAge[`${fullAge.years.toString()}_${(fullAge.months + 1).toString()}`]
+	// }
+
+	if (fullAge.months === 0) {
 		years = _resultAge[(Number(fullAge.years) % 80).toString() + '_0']
 	} else {
-		years = _resultAge[`${fullAge.years.toString()}_${(fullAge.months + 1).toString()}`]
+		years = _resultAge[`${fullAge.years.toString()}_${(fullAge.months).toString()}`]
 	}
 
 	console.log(fullAge)

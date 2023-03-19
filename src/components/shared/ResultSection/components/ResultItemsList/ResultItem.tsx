@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ArrowDown from '../../../../common/svg/ArrowDown'
 import dataText from './data'
 

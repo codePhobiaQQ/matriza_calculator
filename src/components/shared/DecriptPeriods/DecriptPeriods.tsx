@@ -28,6 +28,8 @@ const DecriptPeriods = ({ classing = '', periods }: DecriptPeriodsI) => {
 		setComfortResult([matrixData.e])
 	}, [matrixData, activeTab])
 
+	console.log('matrixData', matrixData)
+
 	return (
 		<div className={`${classing} DecryptPeriods`}>
 			{/* <p>{periodsResult}</p>
